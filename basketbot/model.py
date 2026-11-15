@@ -159,12 +159,32 @@ def predict_game(meta: dict, history: list[dict], confirmed: dict | None = None,
 
 
 def score_predictions(pred: dict, actual_id: str) -> dict:
+    """Grade every forecast, including actual scorers outside the predicted five.
+
+    Keep covered-only proper scores for comparison with the original baseline, but
+    publish unconditional scores too. An out-of-roster scorer is not a free pass.
+    """
     players = pred["predictions"]
-    if actual_id not in {p["id"] for p in players}:
-        return {"graded": False, "reason": "actual_scorer_not_in_predicted_lineup"}
-    probs = {p["id"]: p["probability"] for p in players}
-    return {"graded": True, "top1": int(players[0]["id"] == actual_id),
+    probs = {p["id"]: float(p["probability"]) for p in players}
+    if len(probs) != 10 or any(v < 0 or v > 1 for v in probs.values()):
+        raise ValueError("Expected ten unique players and probabilities")
+    missed_lineup = actual_id not in probs
+    # One implicit OTHER class with zero forecast mass, penalized at log-loss floor.
+    # Brier includes this eleventh class for both model and uniform baseline.
+    actual_prob = probs.get(actual_id, 0.0)
+    log_loss = -math.log(max(1e-8, actual_prob))
+    brier = (sum((p - int(pid == actual_id)) ** 2 for pid, p in probs.items())
+             + int(missed_lineup)) / 11
+    baseline_log = -math.log(1e-8 if missed_lineup else 0.1)
+    baseline_brier = ((1.1 if missed_lineup else 0.9) / 11)
+    common = {"lineup_miss": missed_lineup, "log_loss_all": log_loss,
+              "brier_all": brier, "uniform_log_loss_all": baseline_log,
+              "uniform_brier_all": baseline_brier}
+    if missed_lineup:
+        return {**common, "graded": False, "top1": 0, "top3": 0,
+                "reason": "actual_scorer_not_in_predicted_lineup"}
+    return {**common, "graded": True,
+            "top1": int(players[0]["id"] == actual_id),
             "top3": int(actual_id in [p["id"] for p in players[:3]]),
-            "log_loss": -math.log(max(1e-8, probs[actual_id])),
-            "brier": sum((p - (1 if pid == actual_id else 0)) ** 2 for pid, p in probs.items()) / len(probs),
-            "uniform_log_loss": math.log(10), "uniform_brier": 0.09}
+            "log_loss": log_loss, "brier": brier,
+            "uniform_log_loss": baseline_log, "uniform_brier": baseline_brier}
