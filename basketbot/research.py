@@ -115,7 +115,12 @@ def research(history: list[dict], simulations=2000):
     else:
         selected = None
     # Validation and test sizes are genuine sample-size gates, not tunable excuses.
-    ready = b - a >= 200 and N - b >= 200
+    catalog = read_json(DATA / "schedule.json", [])
+    completed_ids = {g["game_id"] for g in catalog if g.get("status") == 3}
+    observed_ids = {g["game_id"] for g in ordered}
+    archive_coverage = len(observed_ids & completed_ids) / len(completed_ids) if completed_ids else None
+    ready = (b - a >= 200 and N - b >= 200 and
+             archive_coverage is not None and archive_coverage >= 0.98)
     incumbent_test = portions["test"]["incumbent"]
     baseline_test = portions["test"]["uniform"]
     challenger_test = portions["test"][selected] if selected else None
@@ -127,13 +132,16 @@ def research(history: list[dict], simulations=2000):
         "research_version": RESEARCH_VERSION, "production_champion": MODEL_VERSION,
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "history_games": len(ordered), "forecastable_games": N,
+        "finished_games_in_catalog": len(completed_ids),
+        "missing_finished_games": len(completed_ids - observed_ids),
+        "archive_coverage": round(archive_coverage, 5) if archive_coverage is not None else None,
         "unavailable_lineups": unavailable, "unknown_outcome_mass_assumed": UNKNOWN_MASS,
         "split": "chronological 60% development / 20% validation / 20% test",
         "selection": "best validation log loss among fixed challenger formulas",
         "selected_challenger": selected, "promotion_earned": earned,
         "status": "eligible_for_review_not_auto_promoted" if earned else (
             "insufficient_out_of_sample_data" if not ready else "failed_promotion_gate"),
-        "promotion_gate": "at least 200 validation and 200 test games; test log-loss improvement >0.01 over incumbent and uniform; no top1 degradation",
+        "promotion_gate": "at least 200 validation and 200 test games, >=98% complete archive, test log-loss improvement >0.01 over incumbent and uniform; no top1 degradation",
         "note": "Fixed provisional 12% other-scorer bucket is applied equally to ALL methods for comparison; these are not calibrated live probabilities.",
         "results": portions
     }
