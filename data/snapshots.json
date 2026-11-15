@@ -3148,5 +3148,950 @@
     "simulations": 40000,
     "tip_home_probability": 0.5,
     "tipoff_utc": "2026-11-16T02:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909985",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "IND @ PHI",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4473,
+        "id": "3149673",
+        "name": "Pascal Siakam",
+        "probability": 0.1723,
+        "shot_share": 0.3329,
+        "team": "IND",
+        "team_id": "11"
+      },
+      {
+        "fg_probability": 0.4171,
+        "id": "4395712",
+        "name": "Andrew Nembhard",
+        "probability": 0.14727,
+        "shot_share": 0.3011,
+        "team": "IND",
+        "team_id": "11"
+      },
+      {
+        "fg_probability": 0.4406,
+        "id": "5124612",
+        "name": "VJ Edgecombe",
+        "probability": 0.13908,
+        "shot_share": 0.2701,
+        "team": "PHI",
+        "team_id": "20"
+      },
+      {
+        "fg_probability": 0.4609,
+        "id": "4431678",
+        "name": "Tyrese Maxey",
+        "probability": 0.11207,
+        "shot_share": 0.2124,
+        "team": "PHI",
+        "team_id": "20"
+      },
+      {
+        "fg_probability": 0.4002,
+        "id": "1966",
+        "name": "LeBron James",
+        "probability": 0.0928,
+        "shot_share": 0.1944,
+        "team": "PHI",
+        "team_id": "20"
+      },
+      {
+        "fg_probability": 0.4537,
+        "id": "4017837",
+        "name": "Ivica Zubac",
+        "probability": 0.08357,
+        "shot_share": 0.16,
+        "team": "IND",
+        "team_id": "11"
+      },
+      {
+        "fg_probability": 0.3563,
+        "id": "3059318",
+        "name": "Joel Embiid",
+        "probability": 0.0774,
+        "shot_share": 0.187,
+        "team": "PHI",
+        "team_id": "20"
+      },
+      {
+        "fg_probability": 0.4402,
+        "id": "3917376",
+        "name": "Jaylen Brown",
+        "probability": 0.06913,
+        "shot_share": 0.1361,
+        "team": "PHI",
+        "team_id": "20"
+      },
+      {
+        "fg_probability": 0.4379,
+        "id": "4396909",
+        "name": "Aaron Nesmith",
+        "probability": 0.05343,
+        "shot_share": 0.1042,
+        "team": "IND",
+        "team_id": "11"
+      },
+      {
+        "fg_probability": 0.444,
+        "id": "3133603",
+        "name": "Kelly Oubre Jr.",
+        "probability": 0.05295,
+        "shot_share": 0.1018,
+        "team": "IND",
+        "team_id": "11"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T18:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909986",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "LAL @ PHX",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4816,
+        "id": "3945274",
+        "name": "Luka Doncic",
+        "probability": 0.19043,
+        "shot_share": 0.3598,
+        "team": "LAL",
+        "team_id": "13"
+      },
+      {
+        "fg_probability": 0.4449,
+        "id": "4066457",
+        "name": "Austin Reaves",
+        "probability": 0.1431,
+        "shot_share": 0.2937,
+        "team": "LAL",
+        "team_id": "13"
+      },
+      {
+        "fg_probability": 0.5078,
+        "id": "3136193",
+        "name": "Devin Booker",
+        "probability": 0.13842,
+        "shot_share": 0.2528,
+        "team": "PHX",
+        "team_id": "21"
+      },
+      {
+        "fg_probability": 0.4451,
+        "id": "4437244",
+        "name": "Jalen Green",
+        "probability": 0.1157,
+        "shot_share": 0.2405,
+        "team": "PHX",
+        "team_id": "21"
+      },
+      {
+        "fg_probability": 0.3875,
+        "id": "3155526",
+        "name": "Dillon Brooks",
+        "probability": 0.09405,
+        "shot_share": 0.2221,
+        "team": "PHX",
+        "team_id": "21"
+      },
+      {
+        "fg_probability": 0.4283,
+        "id": "4066383",
+        "name": "Miles Bridges",
+        "probability": 0.08385,
+        "shot_share": 0.1836,
+        "team": "PHX",
+        "team_id": "21"
+      },
+      {
+        "fg_probability": 0.5352,
+        "id": "4433136",
+        "name": "Walker Kessler",
+        "probability": 0.0723,
+        "shot_share": 0.1217,
+        "team": "LAL",
+        "team_id": "13"
+      },
+      {
+        "fg_probability": 0.4645,
+        "id": "3907498",
+        "name": "Matisse Thybulle",
+        "probability": 0.0708,
+        "shot_share": 0.1424,
+        "team": "LAL",
+        "team_id": "13"
+      },
+      {
+        "fg_probability": 0.4892,
+        "id": "4601023",
+        "name": "Oso Ighodaro",
+        "probability": 0.05405,
+        "shot_share": 0.101,
+        "team": "PHX",
+        "team_id": "21"
+      },
+      {
+        "fg_probability": 0.4278,
+        "id": "4592691",
+        "name": "Jake LaRavia",
+        "probability": 0.0373,
+        "shot_share": 0.0824,
+        "team": "LAL",
+        "team_id": "13"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T21:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909987",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "CHA @ LAC",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4546,
+        "id": "4396907",
+        "name": "Darius Garland",
+        "probability": 0.17328,
+        "shot_share": 0.3305,
+        "team": "LAC",
+        "team_id": "12"
+      },
+      {
+        "fg_probability": 0.3857,
+        "id": "4396971",
+        "name": "Naz Reid",
+        "probability": 0.16005,
+        "shot_share": 0.3536,
+        "team": "CHA",
+        "team_id": "30"
+      },
+      {
+        "fg_probability": 0.5126,
+        "id": "3448",
+        "name": "Brook Lopez",
+        "probability": 0.12695,
+        "shot_share": 0.2096,
+        "team": "LAC",
+        "team_id": "12"
+      },
+      {
+        "fg_probability": 0.5204,
+        "id": "4433249",
+        "name": "Moussa Diabate",
+        "probability": 0.11265,
+        "shot_share": 0.1852,
+        "team": "CHA",
+        "team_id": "30"
+      },
+      {
+        "fg_probability": 0.3671,
+        "id": "4395651",
+        "name": "Coby White",
+        "probability": 0.1071,
+        "shot_share": 0.2505,
+        "team": "CHA",
+        "team_id": "30"
+      },
+      {
+        "fg_probability": 0.396,
+        "id": "4066648",
+        "name": "Rui Hachimura",
+        "probability": 0.0948,
+        "shot_share": 0.2049,
+        "team": "LAC",
+        "team_id": "12"
+      },
+      {
+        "fg_probability": 0.4199,
+        "id": "3936099",
+        "name": "Derrick Jones Jr.",
+        "probability": 0.09115,
+        "shot_share": 0.1825,
+        "team": "LAC",
+        "team_id": "12"
+      },
+      {
+        "fg_probability": 0.418,
+        "id": "3135045",
+        "name": "Grayson Allen",
+        "probability": 0.06957,
+        "shot_share": 0.1459,
+        "team": "CHA",
+        "team_id": "30"
+      },
+      {
+        "fg_probability": 0.4333,
+        "id": "2991139",
+        "name": "Kris Dunn",
+        "probability": 0.03595,
+        "shot_share": 0.0724,
+        "team": "LAC",
+        "team_id": "12"
+      },
+      {
+        "fg_probability": 0.3936,
+        "id": "4602025",
+        "name": "Sion James",
+        "probability": 0.0285,
+        "shot_share": 0.0648,
+        "team": "CHA",
+        "team_id": "30"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T21:30:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909988",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "SA @ UTAH",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4201,
+        "id": "4873138",
+        "name": "Ace Bailey",
+        "probability": 0.18085,
+        "shot_share": 0.3874,
+        "team": "UTAH",
+        "team_id": "26"
+      },
+      {
+        "fg_probability": 0.5273,
+        "id": "5104157",
+        "name": "Victor Wembanyama",
+        "probability": 0.16157,
+        "shot_share": 0.2776,
+        "team": "SA",
+        "team_id": "24"
+      },
+      {
+        "fg_probability": 0.5086,
+        "id": "4066259",
+        "name": "De'Aaron Fox",
+        "probability": 0.13625,
+        "shot_share": 0.2398,
+        "team": "SA",
+        "team_id": "24"
+      },
+      {
+        "fg_probability": 0.4573,
+        "id": "4433627",
+        "name": "Keyonte George",
+        "probability": 0.11897,
+        "shot_share": 0.2401,
+        "team": "UTAH",
+        "team_id": "26"
+      },
+      {
+        "fg_probability": 0.3982,
+        "id": "4845367",
+        "name": "Stephon Castle",
+        "probability": 0.10445,
+        "shot_share": 0.2323,
+        "team": "SA",
+        "team_id": "24"
+      },
+      {
+        "fg_probability": 0.4026,
+        "id": "5041955",
+        "name": "Darryn Peterson",
+        "probability": 0.07537,
+        "shot_share": 0.1726,
+        "team": "UTAH",
+        "team_id": "26"
+      },
+      {
+        "fg_probability": 0.4134,
+        "id": "4395630",
+        "name": "Devin Vassell",
+        "probability": 0.07013,
+        "shot_share": 0.1541,
+        "team": "SA",
+        "team_id": "24"
+      },
+      {
+        "fg_probability": 0.4384,
+        "id": "4065663",
+        "name": "Josh Okogie",
+        "probability": 0.0567,
+        "shot_share": 0.1215,
+        "team": "UTAH",
+        "team_id": "26"
+      },
+      {
+        "fg_probability": 0.4872,
+        "id": "5037871",
+        "name": "Dylan Harper",
+        "probability": 0.05237,
+        "shot_share": 0.0961,
+        "team": "SA",
+        "team_id": "24"
+      },
+      {
+        "fg_probability": 0.5,
+        "id": "4397077",
+        "name": "Jaxson Hayes",
+        "probability": 0.04333,
+        "shot_share": 0.0784,
+        "team": "UTAH",
+        "team_id": "26"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T22:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909989",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "DAL @ BOS",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4384,
+        "id": "5041939",
+        "name": "Cooper Flagg",
+        "probability": 0.2209,
+        "shot_share": 0.465,
+        "team": "DAL",
+        "team_id": "6"
+      },
+      {
+        "fg_probability": 0.4248,
+        "id": "4065648",
+        "name": "Jayson Tatum",
+        "probability": 0.17567,
+        "shot_share": 0.3766,
+        "team": "BOS",
+        "team_id": "2"
+      },
+      {
+        "fg_probability": 0.5062,
+        "id": "4251",
+        "name": "Paul George",
+        "probability": 0.11768,
+        "shot_share": 0.2128,
+        "team": "BOS",
+        "team_id": "2"
+      },
+      {
+        "fg_probability": 0.4531,
+        "id": "6442",
+        "name": "Kyrie Irving",
+        "probability": 0.116,
+        "shot_share": 0.2313,
+        "team": "DAL",
+        "team_id": "6"
+      },
+      {
+        "fg_probability": 0.4452,
+        "id": "3078576",
+        "name": "Derrick White",
+        "probability": 0.08762,
+        "shot_share": 0.1843,
+        "team": "BOS",
+        "team_id": "2"
+      },
+      {
+        "fg_probability": 0.474,
+        "id": "4397424",
+        "name": "Neemias Queta",
+        "probability": 0.0715,
+        "shot_share": 0.1321,
+        "team": "BOS",
+        "team_id": "2"
+      },
+      {
+        "fg_probability": 0.5289,
+        "id": "4278049",
+        "name": "Daniel Gafford",
+        "probability": 0.06753,
+        "shot_share": 0.1115,
+        "team": "DAL",
+        "team_id": "6"
+      },
+      {
+        "fg_probability": 0.4402,
+        "id": "4278078",
+        "name": "P.J. Washington",
+        "probability": 0.05267,
+        "shot_share": 0.1137,
+        "team": "DAL",
+        "team_id": "6"
+      },
+      {
+        "fg_probability": 0.4572,
+        "id": "4593841",
+        "name": "Baylor Scheierman",
+        "probability": 0.04735,
+        "shot_share": 0.0942,
+        "team": "BOS",
+        "team_id": "2"
+      },
+      {
+        "fg_probability": 0.5021,
+        "id": "3138160",
+        "name": "Caleb Martin",
+        "probability": 0.04308,
+        "shot_share": 0.0785,
+        "team": "DAL",
+        "team_id": "6"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T23:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909990",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "NY @ TOR",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.442,
+        "id": "3934672",
+        "name": "Jalen Brunson",
+        "probability": 0.1686,
+        "shot_share": 0.3475,
+        "team": "NY",
+        "team_id": "18"
+      },
+      {
+        "fg_probability": 0.4336,
+        "id": "4684272",
+        "name": "Ja'Kobe Walter",
+        "probability": 0.15685,
+        "shot_share": 0.329,
+        "team": "TOR",
+        "team_id": "28"
+      },
+      {
+        "fg_probability": 0.4642,
+        "id": "4395625",
+        "name": "RJ Barrett",
+        "probability": 0.1481,
+        "shot_share": 0.2904,
+        "team": "TOR",
+        "team_id": "28"
+      },
+      {
+        "fg_probability": 0.4363,
+        "id": "3934719",
+        "name": "OG Anunoby",
+        "probability": 0.10992,
+        "shot_share": 0.2247,
+        "team": "NY",
+        "team_id": "18"
+      },
+      {
+        "fg_probability": 0.4805,
+        "id": "3136195",
+        "name": "Karl-Anthony Towns",
+        "probability": 0.10817,
+        "shot_share": 0.2054,
+        "team": "NY",
+        "team_id": "18"
+      },
+      {
+        "fg_probability": 0.5125,
+        "id": "3134908",
+        "name": "Jakob Poeltl",
+        "probability": 0.10068,
+        "shot_share": 0.1803,
+        "team": "TOR",
+        "team_id": "28"
+      },
+      {
+        "fg_probability": 0.472,
+        "id": "3147657",
+        "name": "Mikal Bridges",
+        "probability": 0.0745,
+        "shot_share": 0.1456,
+        "team": "NY",
+        "team_id": "18"
+      },
+      {
+        "fg_probability": 0.4627,
+        "id": "5093267",
+        "name": "Collin Murray-Boyles",
+        "probability": 0.05862,
+        "shot_share": 0.1135,
+        "team": "TOR",
+        "team_id": "28"
+      },
+      {
+        "fg_probability": 0.4279,
+        "id": "4395724",
+        "name": "Immanuel Quickley",
+        "probability": 0.0417,
+        "shot_share": 0.0868,
+        "team": "TOR",
+        "team_id": "28"
+      },
+      {
+        "fg_probability": 0.3912,
+        "id": "3062679",
+        "name": "Josh Hart",
+        "probability": 0.03285,
+        "shot_share": 0.0768,
+        "team": "NY",
+        "team_id": "18"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-15T23:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909991",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "HOU @ WSH",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.5252,
+        "id": "6583",
+        "name": "Anthony Davis",
+        "probability": 0.15263,
+        "shot_share": 0.2786,
+        "team": "WSH",
+        "team_id": "27"
+      },
+      {
+        "fg_probability": 0.5062,
+        "id": "4871144",
+        "name": "Alperen Sengun",
+        "probability": 0.1318,
+        "shot_share": 0.2478,
+        "team": "HOU",
+        "team_id": "10"
+      },
+      {
+        "fg_probability": 0.4193,
+        "id": "5174563",
+        "name": "Kyshawn George",
+        "probability": 0.1269,
+        "shot_share": 0.288,
+        "team": "WSH",
+        "team_id": "27"
+      },
+      {
+        "fg_probability": 0.4795,
+        "id": "2991230",
+        "name": "Fred VanVleet",
+        "probability": 0.12587,
+        "shot_share": 0.2408,
+        "team": "HOU",
+        "team_id": "10"
+      },
+      {
+        "fg_probability": 0.5006,
+        "id": "3202",
+        "name": "Kevin Durant",
+        "probability": 0.11217,
+        "shot_share": 0.2105,
+        "team": "HOU",
+        "team_id": "10"
+      },
+      {
+        "fg_probability": 0.4842,
+        "id": "5160992",
+        "name": "Alex Sarr",
+        "probability": 0.11045,
+        "shot_share": 0.2154,
+        "team": "WSH",
+        "team_id": "27"
+      },
+      {
+        "fg_probability": 0.4496,
+        "id": "4432639",
+        "name": "Jabari Smith Jr.",
+        "probability": 0.08513,
+        "shot_share": 0.1806,
+        "team": "HOU",
+        "team_id": "10"
+      },
+      {
+        "fg_probability": 0.4165,
+        "id": "5142718",
+        "name": "AJ Dybantsa",
+        "probability": 0.0614,
+        "shot_share": 0.1361,
+        "team": "WSH",
+        "team_id": "27"
+      },
+      {
+        "fg_probability": 0.4695,
+        "id": "4684740",
+        "name": "Amen Thompson",
+        "probability": 0.05845,
+        "shot_share": 0.1203,
+        "team": "HOU",
+        "team_id": "10"
+      },
+      {
+        "fg_probability": 0.4152,
+        "id": "4277905",
+        "name": "Trae Young",
+        "probability": 0.0352,
+        "shot_share": 0.0819,
+        "team": "WSH",
+        "team_id": "27"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-16T00:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909992",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "ATL @ MIL",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.5094,
+        "id": "4431680",
+        "name": "Onyeka Okongwu",
+        "probability": 0.1235,
+        "shot_share": 0.2163,
+        "team": "ATL",
+        "team_id": "1"
+      },
+      {
+        "fg_probability": 0.3938,
+        "id": "4869342",
+        "name": "Dyson Daniels",
+        "probability": 0.12183,
+        "shot_share": 0.2701,
+        "team": "ATL",
+        "team_id": "1"
+      },
+      {
+        "fg_probability": 0.431,
+        "id": "3133628",
+        "name": "Myles Turner",
+        "probability": 0.11947,
+        "shot_share": 0.2471,
+        "team": "MIL",
+        "team_id": "15"
+      },
+      {
+        "fg_probability": 0.4155,
+        "id": "5082206",
+        "name": "Brayden Burries",
+        "probability": 0.1143,
+        "shot_share": 0.2492,
+        "team": "MIL",
+        "team_id": "15"
+      },
+      {
+        "fg_probability": 0.4196,
+        "id": "4395725",
+        "name": "Tyler Herro",
+        "probability": 0.1126,
+        "shot_share": 0.2407,
+        "team": "MIL",
+        "team_id": "15"
+      },
+      {
+        "fg_probability": 0.4614,
+        "id": "4278039",
+        "name": "Nickeil Alexander-Walker",
+        "probability": 0.10942,
+        "shot_share": 0.213,
+        "team": "ATL",
+        "team_id": "1"
+      },
+      {
+        "fg_probability": 0.5037,
+        "id": "4701230",
+        "name": "Jalen Johnson",
+        "probability": 0.10032,
+        "shot_share": 0.1749,
+        "team": "ATL",
+        "team_id": "1"
+      },
+      {
+        "fg_probability": 0.4978,
+        "id": "4432848",
+        "name": "Jaime Jaquez Jr.",
+        "probability": 0.08048,
+        "shot_share": 0.149,
+        "team": "MIL",
+        "team_id": "15"
+      },
+      {
+        "fg_probability": 0.448,
+        "id": "5149077",
+        "name": "Kingston Flemings",
+        "probability": 0.0637,
+        "shot_share": 0.1257,
+        "team": "ATL",
+        "team_id": "1"
+      },
+      {
+        "fg_probability": 0.4267,
+        "id": "3134907",
+        "name": "Kyle Kuzma",
+        "probability": 0.05437,
+        "shot_share": 0.1141,
+        "team": "MIL",
+        "team_id": "15"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-16T01:00:00+00:00"
+  },
+  {
+    "data_source": "espn_site_v2",
+    "game_id": "401909993",
+    "generated_at_utc": "2026-11-15T17:52:51.764893+00:00",
+    "historical_games_available": 938,
+    "lineup_status": "projected",
+    "matchup": "OKC @ SAC",
+    "model": "opening-possession-v2-espn",
+    "predictions": [
+      {
+        "fg_probability": 0.4645,
+        "id": "4431679",
+        "name": "Precious Achiuwa",
+        "probability": 0.12295,
+        "shot_share": 0.2453,
+        "team": "SAC",
+        "team_id": "23"
+      },
+      {
+        "fg_probability": 0.4542,
+        "id": "4278073",
+        "name": "Shai Gilgeous-Alexander",
+        "probability": 0.11915,
+        "shot_share": 0.2413,
+        "team": "OKC",
+        "team_id": "25"
+      },
+      {
+        "fg_probability": 0.5107,
+        "id": "4222252",
+        "name": "Isaiah Hartenstein",
+        "probability": 0.11613,
+        "shot_share": 0.2106,
+        "team": "OKC",
+        "team_id": "25"
+      },
+      {
+        "fg_probability": 0.4475,
+        "id": "5142620",
+        "name": "Darius Acuff Jr.",
+        "probability": 0.11613,
+        "shot_share": 0.2407,
+        "team": "SAC",
+        "team_id": "23"
+      },
+      {
+        "fg_probability": 0.4177,
+        "id": "4683778",
+        "name": "Jared McCain",
+        "probability": 0.1065,
+        "shot_share": 0.2377,
+        "team": "OKC",
+        "team_id": "25"
+      },
+      {
+        "fg_probability": 0.4909,
+        "id": "3155942",
+        "name": "Domantas Sabonis",
+        "probability": 0.10428,
+        "shot_share": 0.1973,
+        "team": "SAC",
+        "team_id": "23"
+      },
+      {
+        "fg_probability": 0.4831,
+        "id": "3133626",
+        "name": "Kenrich Williams",
+        "probability": 0.09433,
+        "shot_share": 0.1807,
+        "team": "OKC",
+        "team_id": "25"
+      },
+      {
+        "fg_probability": 0.4123,
+        "id": "4065732",
+        "name": "De'Andre Hunter",
+        "probability": 0.08013,
+        "shot_share": 0.179,
+        "team": "SAC",
+        "team_id": "23"
+      },
+      {
+        "fg_probability": 0.5088,
+        "id": "5174983",
+        "name": "Aday Mara",
+        "probability": 0.07212,
+        "shot_share": 0.1296,
+        "team": "OKC",
+        "team_id": "25"
+      },
+      {
+        "fg_probability": 0.4558,
+        "id": "3064440",
+        "name": "Zach LaVine",
+        "probability": 0.0683,
+        "shot_share": 0.1376,
+        "team": "SAC",
+        "team_id": "23"
+      }
+    ],
+    "quality": "watchlist_only",
+    "simulations": 40000,
+    "tip_home_probability": 0.5,
+    "tipoff_utc": "2026-11-16T02:00:00+00:00"
   }
 ]

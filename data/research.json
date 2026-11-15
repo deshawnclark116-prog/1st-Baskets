@@ -1,10 +1,10 @@
 {
-  "archive_coverage": 0.55376,
-  "created_utc": "2026-11-15T15:34:20.050194+00:00",
+  "archive_coverage": 0.65917,
+  "created_utc": "2026-11-15T17:53:03.674482+00:00",
   "finished_games_in_catalog": 1423,
-  "forecastable_games": 734,
-  "history_games": 788,
-  "missing_finished_games": 635,
+  "forecastable_games": 886,
+  "history_games": 938,
+  "missing_finished_games": 485,
   "note": "Fixed provisional 12% other-scorer bucket is applied equally to ALL methods for comparison; these are not calibrated live probabilities.",
   "production_champion": "opening-possession-v2-espn",
   "promotion_earned": false,
@@ -13,128 +13,128 @@
   "results": {
     "development": {
       "first_fg_empirical": {
-        "brier": 0.08235,
-        "lineup_misses": 70,
-        "log_loss": 2.37929,
-        "n": 440,
-        "top1": 0.125,
-        "top3": 0.325
+        "brier": 0.08263,
+        "lineup_misses": 84,
+        "log_loss": 2.39561,
+        "n": 531,
+        "top1": 0.10734,
+        "top3": 0.29379
       },
       "incumbent": {
-        "brier": 0.08181,
-        "lineup_misses": 70,
-        "log_loss": 2.34301,
-        "n": 440,
-        "top1": 0.14773,
-        "top3": 0.34318
+        "brier": 0.08251,
+        "lineup_misses": 84,
+        "log_loss": 2.38958,
+        "n": 531,
+        "top1": 0.12618,
+        "top3": 0.30508
       },
       "shot_allocation": {
-        "brier": 0.0819,
-        "lineup_misses": 70,
-        "log_loss": 2.34695,
-        "n": 440,
-        "top1": 0.13409,
-        "top3": 0.33864
+        "brier": 0.08263,
+        "lineup_misses": 84,
+        "log_loss": 2.39431,
+        "n": 531,
+        "top1": 0.12053,
+        "top3": 0.29755
       },
       "shot_x_fg": {
-        "brier": 0.08191,
-        "lineup_misses": 70,
-        "log_loss": 2.34769,
-        "n": 440,
-        "top1": 0.13864,
-        "top3": 0.33864
+        "brier": 0.08263,
+        "lineup_misses": 84,
+        "log_loss": 2.39395,
+        "n": 531,
+        "top1": 0.11864,
+        "top3": 0.30508
       },
       "uniform": {
-        "brier": 0.08233,
-        "lineup_misses": 70,
-        "log_loss": 2.38108,
-        "n": 440,
-        "top1": 0.07273,
-        "top3": 0.26136
+        "brier": 0.08234,
+        "lineup_misses": 84,
+        "log_loss": 2.38135,
+        "n": 531,
+        "top1": 0.0791,
+        "top3": 0.28249
       }
     },
     "test": {
       "first_fg_empirical": {
-        "brier": 0.08311,
-        "lineup_misses": 13,
-        "log_loss": 2.42728,
-        "n": 147,
-        "top1": 0.10884,
-        "top3": 0.28571
+        "brier": 0.08294,
+        "lineup_misses": 24,
+        "log_loss": 2.41658,
+        "n": 178,
+        "top1": 0.10674,
+        "top3": 0.26404
       },
       "incumbent": {
-        "brier": 0.08337,
-        "lineup_misses": 13,
-        "log_loss": 2.46641,
-        "n": 147,
-        "top1": 0.10204,
-        "top3": 0.35374
+        "brier": 0.08316,
+        "lineup_misses": 24,
+        "log_loss": 2.45629,
+        "n": 178,
+        "top1": 0.10674,
+        "top3": 0.33146
       },
       "shot_allocation": {
-        "brier": 0.08327,
-        "lineup_misses": 13,
-        "log_loss": 2.4614,
-        "n": 147,
-        "top1": 0.13605,
-        "top3": 0.30612
+        "brier": 0.08301,
+        "lineup_misses": 24,
+        "log_loss": 2.44895,
+        "n": 178,
+        "top1": 0.1236,
+        "top3": 0.29775
       },
       "shot_x_fg": {
-        "brier": 0.08324,
-        "lineup_misses": 13,
-        "log_loss": 2.45883,
-        "n": 147,
-        "top1": 0.12925,
-        "top3": 0.29932
+        "brier": 0.08305,
+        "lineup_misses": 24,
+        "log_loss": 2.44688,
+        "n": 178,
+        "top1": 0.1236,
+        "top3": 0.28652
       },
       "uniform": {
-        "brier": 0.08274,
-        "lineup_misses": 13,
-        "log_loss": 2.40299,
-        "n": 147,
-        "top1": 0.10204,
-        "top3": 0.27211
+        "brier": 0.08247,
+        "lineup_misses": 24,
+        "log_loss": 2.3886,
+        "n": 178,
+        "top1": 0.10112,
+        "top3": 0.26404
       }
     },
     "validation": {
       "first_fg_empirical": {
-        "brier": 0.08253,
-        "lineup_misses": 43,
-        "log_loss": 2.38484,
-        "n": 147,
-        "top1": 0.05442,
-        "top3": 0.21088
+        "brier": 0.08242,
+        "lineup_misses": 39,
+        "log_loss": 2.37684,
+        "n": 177,
+        "top1": 0.0678,
+        "top3": 0.28249
       },
       "incumbent": {
-        "brier": 0.0818,
-        "lineup_misses": 43,
-        "log_loss": 2.33761,
-        "n": 147,
-        "top1": 0.14286,
-        "top3": 0.26531
+        "brier": 0.08158,
+        "lineup_misses": 39,
+        "log_loss": 2.31937,
+        "n": 177,
+        "top1": 0.15254,
+        "top3": 0.29944
       },
       "shot_allocation": {
-        "brier": 0.08189,
-        "lineup_misses": 43,
-        "log_loss": 2.33951,
-        "n": 147,
-        "top1": 0.08163,
-        "top3": 0.26531
+        "brier": 0.08183,
+        "lineup_misses": 39,
+        "log_loss": 2.32947,
+        "n": 177,
+        "top1": 0.09605,
+        "top3": 0.30508
       },
       "shot_x_fg": {
-        "brier": 0.08194,
-        "lineup_misses": 43,
-        "log_loss": 2.33792,
-        "n": 147,
-        "top1": 0.12245,
-        "top3": 0.2449
+        "brier": 0.08174,
+        "lineup_misses": 39,
+        "log_loss": 2.3251,
+        "n": 177,
+        "top1": 0.14689,
+        "top3": 0.28814
       },
       "uniform": {
-        "brier": 0.08156,
-        "lineup_misses": 43,
-        "log_loss": 2.33969,
-        "n": 147,
-        "top1": 0.08844,
-        "top3": 0.21769
+        "brier": 0.08198,
+        "lineup_misses": 39,
+        "log_loss": 2.36208,
+        "n": 177,
+        "top1": 0.08475,
+        "top3": 0.23164
       }
     }
   },
@@ -142,6 +142,6 @@
   "selection": "best validation log loss among fixed challenger formulas",
   "split": "chronological 60% development / 20% validation / 20% test",
   "status": "insufficient_out_of_sample_data",
-  "unavailable_lineups": 14,
+  "unavailable_lineups": 12,
   "unknown_outcome_mass_assumed": 0.12
 }
