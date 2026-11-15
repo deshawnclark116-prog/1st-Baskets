@@ -1,0 +1,51 @@
+name: First Basket Bot
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'run = update board; backfill = collect more finished games; backtest = walk-forward evaluation'
+        required: true
+        default: run
+        type: choice
+        options: [run, backfill, backtest]
+  schedule:
+    - cron: '7,37 * * * *'   # Approximate twice hourly; GitHub may delay scheduled jobs.
+    - cron: '13 10 * * 1'  # Monday UTC: walk-forward research audit.
+permissions:
+  contents: write
+concurrency:
+  group: first-basket-bot-main
+  cancel-in-progress: false
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run deterministic offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect, predict, or backtest
+        env:
+          SELECTED: ${{ inputs.command || 'run' }}
+          CRON_EXPR: ${{ github.event.schedule }}
+        run: |
+          if [ "$CRON_EXPR" = '13 10 * * 1' ] && [ "${{ github.event_name }}" = schedule ]; then SELECTED=backtest; fi
+          case "$SELECTED" in
+            run) python -m basketbot run --max-new 150 --simulations 40000 ;;
+            backfill) python -m basketbot backfill --max-new 350 ;;
+            backtest) python -m basketbot backtest --simulations 5000 ;;
+            *) echo 'Unrecognized mode' >&2; exit 2 ;;
+          esac
+      - name: Save research artifacts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ docs/latest.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'bot: refresh first-basket data and forecasts'
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

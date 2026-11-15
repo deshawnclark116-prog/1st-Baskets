@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>First Basket Lab</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#0c111c;color:#ecf2ff;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;line-height:1.5}main{max-width:1040px;margin:30px auto;padding:0 18px}
+header{padding:16px 0 24px}h1{font-size:clamp(1.7rem,4vw,2.5rem);margin:0}h2{font-size:1.15rem}
+p,.muted{color:#acb9cf}a{color:#8ecbff}.pill{font-size:.75rem;padding:3px 8px;border:1px solid #53647c;border-radius:999px}
+.game{background:#162133;border:1px solid #2e415a;padding:20px;border-radius:14px;margin:20px 0}
+.meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.86rem;color:#b4c4d9}
+.item{display:grid;grid-template-columns:minmax(120px,1fr) 50px;gap:12px;align-items:center;margin:14px 0}
+.bar{background:#29384b;border-radius:7px;height:10px;overflow:hidden;margin-top:6px}.fill{background:#5fb5ff;height:100%}
+small{color:#a5b8d4}.empty{padding:30px;border:1px dashed #546782;border-radius:12px}
+</style></head><body><main>
+<header><h1>🏀 First Basket Lab</h1><p>Who makes the game's first field goal? Opening-possession model • live research board</p>
+<small id="updated">Loading NBA board…</small></header>
+<section id="games"></section><section id="skipped"></section>
+<footer><p><strong>Important:</strong> Experimental, uncalibrated probabilities. "Projected" means starters are inferred, not confirmed. Free throws do not count as the first basket. This is not a guarantee or a betting recommendation.</p></footer>
+</main><script>
+(async () => {
+ const gameRoot=document.getElementById('games');
+ const skippedRoot=document.getElementById('skipped');
+ const text=(node,value)=>{node.textContent=String(value);return node};
+ const el=(tag,className='',content='')=>{const n=document.createElement(tag);if(className)n.className=className;if(content)text(n,content);return n};
+ try {
+  const response=await fetch('./latest.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('Board has not been published yet ('+response.status+').');
+  const board=await response.json();
+  document.getElementById('updated').textContent='Last generated: '+new Date(board.generated_at_utc).toLocaleString();
+  if(!board.games?.length)gameRoot.append(el('p','empty','No eligible upcoming matchups. A new board is published when source data and starting-lineup projections are available.'));
+  for(const game of board.games||[]){
+   const card=el('article','game');card.append(el('h2','',game.matchup));
+   const meta=el('div','meta');meta.append(el('span','pill',game.lineup_status==='projected'?'Projected starters':'Starters reported in NBA feed'));
+   meta.append(el('span','',new Date(game.tipoff_utc).toLocaleString()));card.append(meta);
+   for(const p of game.predictions){
+    const item=el('div','item'),left=el('div'),name=el('div','',p.name+' · '+p.team),bar=el('div','bar'),fill=el('div','fill');
+    fill.style.width=Math.min(100,p.probability*100)+'%';bar.append(fill);left.append(name,bar);
+    item.append(left,el('strong','', (p.probability*100).toFixed(1)+'%'));card.append(item);
+   }gameRoot.append(card);
+  }
+  if(board.skipped?.length){skippedRoot.append(el('h2','','Unavailable matchups'));
+   for(const s of board.skipped)skippedRoot.append(el('p','muted',s.matchup+' — '+s.reason));}
+ }catch(error){gameRoot.append(el('p','empty','Board unavailable: '+error.message));}
+})();
+</script></body></html>
