@@ -35,11 +35,16 @@ def fetch_json(url: str, attempts: int = 3) -> dict:
     raise RuntimeError(f"ESPN request failed ({url}): {last}")
 
 
-def _months(begin: datetime, end: datetime):
-    y, m = begin.year, begin.month
-    while (y, m) <= (end.year, end.month):
-        yield f"{y}{m:02d}"
-        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+def _regular_season_months(now: datetime):
+    """Only October-April for the current and preceding season; no playoffs."""
+    current_start = now.year if now.month >= 9 else now.year - 1
+    cutoff = now + timedelta(days=35)
+    for season_start in (current_start - 1, current_start):
+        for month in (10, 11, 12, 1, 2, 3, 4):
+            year = season_start if month >= 10 else season_start + 1
+            date = datetime(year, month, 1, tzinfo=timezone.utc)
+            if date <= cutoff:
+                yield f"{year}{month:02d}"
 
 
 def parse_schedule(payload: dict) -> list[dict]:
@@ -78,15 +83,11 @@ def parse_schedule(payload: dict) -> list[dict]:
 
 def get_schedule(now: datetime | None = None) -> list[dict]:
     now = now or datetime.now(timezone.utc)
-    # NBA season starts in October; keep only this regular season's history.
-    season_year = now.year if now.month >= 9 else now.year - 1
-    start = datetime(season_year, 10, 1, tzinfo=timezone.utc)
-    # Before new-season October, query previous regular season without inventing games.
-    if now < start:
-        start = datetime(season_year - 1, 10, 1, tzinfo=timezone.utc)
+    # Historical prior-season regular season enables meaningful walk-forward research.
+    # Season dates are discovered only by event metadata; playoff events are excluded.
     all_games = {}
     problems = []
-    for month in _months(start, now + timedelta(days=35)):
+    for month in _regular_season_months(now):
         url = f"{API}/scoreboard?dates={month}&seasontype=2&limit=500"
         try:
             payload = fetch_json(url)
