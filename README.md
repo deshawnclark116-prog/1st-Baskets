@@ -26,14 +26,18 @@ An autonomous, **research-stage NBA first made field goal** forecast engine. The
 - `basketbot/espn.py`: ESPN event discovery, completed-game normalization, boxscore and PBP validation.
 - `basketbot/source.py`: legacy NBA CDN parser retained for comparison/offline tests, not active in the live pipeline.
 - `basketbot/model.py`: leak-safe starter inference, shot and tip modeling, seeded simulator, outcome scoring.
-- `basketbot/__main__.py`: command line, point-in-time pregame snapshots, grading and expanding-window backtest.
+- `basketbot/__main__.py`: command line, point-in-time pregame snapshots, grading, source schedule manifest and expanding-window backtest.
+- `basketbot/research.py`: four fixed challenger formulas versus incumbent; 60/20/20 chronological selection and a hard, nonautomatic promotion gate.
+- `tests/test_research.py`: deterministic scoring and promotion-safety unit tests.
 - `tests/test_engine.py`, `tests/test_espn.py`: deterministic offline tests, including source and grade-miss behavior.
 - `.github/workflows/bot.yml`: scheduled and manual runs.
 - `docs/index.html`: static GitHub Pages research board (enable Pages from `/docs` on `main`).
 - `data/history.json`: verified, completed game samples, containing no invented results.
 - `data/snapshots.json`: retained predictions with timestamps, never overwritten after tip.
 - `data/graded.json`: latest genuine pre-tip snapshot per finished game.
-- `data/backtest.json`: expanding-window backtest (last 25% reported as chronological holdout).
+- `data/backtest.json`: expanding-window backtest (last 25% reported as chronological holdout), with an archive-coverage diagnostic.
+- `data/schedule.json`: provider-derived expected schedule; exposes missing historical games.
+- `data/research.json`: incumbent-versus-challenger results; provisional OTHER-scorer mass is applied equally across methods, with insufficient-data outcomes visible.
 
 ## Reproduce
 
@@ -44,6 +48,7 @@ python -m unittest discover -s tests -v
 python -m basketbot run --max-new 150 --simulations 40000
 python -m basketbot backfill --max-new 350
 python -m basketbot backtest --simulations 5000
+python -m basketbot.research
 ```
 
 GitHub: **Actions → First Basket Bot → Run workflow**. Select `run`, `backfill`, or `backtest`. The schedule may be delayed by GitHub and the unofficial ESPN service can throttle or change formats.
