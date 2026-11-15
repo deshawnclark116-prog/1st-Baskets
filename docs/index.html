@@ -30,7 +30,7 @@ small{color:#a5b8d4}.empty{padding:30px;border:1px dashed #546782;border-radius:
   if(!board.games?.length)gameRoot.append(el('p','empty','No eligible upcoming matchups. A new board is published when source data and starting-lineup projections are available.'));
   for(const game of board.games||[]){
    const card=el('article','game');card.append(el('h2','',game.matchup));
-   const meta=el('div','meta');meta.append(el('span','pill',game.lineup_status==='projected'?'Projected starters':'Starters reported in NBA feed'));
+   const meta=el('div','meta');meta.append(el('span','pill',game.lineup_status==='projected'?'Projected starters':'Starters reported in ESPN feed'));
    meta.append(el('span','',new Date(game.tipoff_utc).toLocaleString()));card.append(meta);
    for(const p of game.predictions){
     const item=el('div','item'),left=el('div'),name=el('div','',p.name+' · '+p.team),bar=el('div','bar'),fill=el('div','fill');
