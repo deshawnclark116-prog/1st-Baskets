@@ -18,7 +18,7 @@ An autonomous, **research-stage NBA first made field goal** forecast engine. The
 - Predicted lineups can be wrong; any opponent, substitution or starting-five change can invalidate a candidate.
 - Opening tip data is missing in the current ESPN normalization, so the tip prior remains essentially neutral (0.5). Turnover and offensive rebound parameters are provisional fixed assumptions, not team-specific models.
 - First-four-shot tendencies capture each team's early shot attempts, not necessarily only shots before the game's first made field goal.
-- The first season of archive collection is 2026–27; prior NBA seasons are not backfilled automatically.
+- The historical archive currently grows incrementally backward into 2025–26; until finished, training coverage is incomplete. Season-boundary shifts must be assessed separately.
 - The current model is a **baseline**. A reported success rate on a short historical subset does not establish predictive value, calibration, or profitability.
 
 ## Repository
