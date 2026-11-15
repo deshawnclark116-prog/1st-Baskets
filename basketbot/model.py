@@ -7,7 +7,7 @@ from hashlib import sha256
 import math
 import random
 
-MODEL_VERSION = "opening-possession-v1"
+MODEL_VERSION = "opening-possession-v2-espn"
 
 
 def games_before(history: list[dict], tipoff: str) -> list[dict]:
@@ -24,7 +24,18 @@ def infer_lineup(team_id: str, history: list[dict]) -> list[dict]:
     games = team_games(history, team_id, 9)
     if len(games) < 3:
         return []
-    recent_ids = {p["id"] for g in games[-2:] for p in g["players"] if p["team_id"] == team_id and p["minutes"] not in ("PT00M00.00S", "PT0M", "")}
+    def logged_minutes(value):
+        raw = str(value or "").strip()
+        if raw.startswith("PT"):
+            import re
+            match = re.fullmatch(r"PT(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?", raw)
+            return (int(match[1] or 0) * 60 + int(match[2] or 0) + float(match[3] or 0) / 60) if match else 0
+        try:
+            return float(raw.split(":")[0])
+        except (TypeError, ValueError):
+            return 0
+    recent_ids = {p["id"] for g in games[-2:] for p in g["players"]
+                  if p["team_id"] == team_id and logged_minutes(p.get("minutes")) > 0}
     scores = defaultdict(float)
     latest = {}
     for age, game in enumerate(reversed(games)):
@@ -141,7 +152,7 @@ def predict_game(meta: dict, history: list[dict], confirmed: dict | None = None,
     entries.sort(key=lambda p: (-p["probability"], p["id"]))
     return {"game_id": meta["game_id"], "tipoff_utc": meta["tipoff_utc"],
             "matchup": f"{meta['away']['code']} @ {meta['home']['code']}",
-            "model": MODEL_VERSION, "lineup_status": "nba_feed_reported" if confirmed else "projected",
+            "model": MODEL_VERSION, "lineup_status": "espn_feed_reported" if confirmed else "projected",
             "quality": "official_candidate" if confirmed else "watchlist_only",
             "historical_games_available": len(past), "tip_home_probability": round(p_tip, 4),
             "simulations": n, "predictions": entries}
