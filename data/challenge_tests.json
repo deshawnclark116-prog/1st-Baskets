@@ -16,8 +16,18 @@
       "saved_quality": "watchlist_only",
       "user_reported_correct": false,
       "official_first_fg_scorer": null,
-      "status": "user_reported_miss_pending_official_game_verification",
-      "note": "Preserve as a failed user-challenge pick. Do not alter the original pregame snapshot. Do not count as officially graded until game PBP confirms actual first made FG; never backfill a post-tip forecast."
+      "status": "confirmed_user_challenge_miss_independently_correlated_live_sources",
+      "note": "Source-correlated live result: Tyrese Maxey scored Philadelphia's first and game's first FG at 11:29 Q1; final selection Siakam later scored at 10:36. ESPN final PBP/official game feed not yet fetched, so official_first_fg_scorer remains null. Preserve all pre-tip snapshots. The user challenge is a loss.",
+      "first_fg_live_evidence": {
+        "scorer": "Tyrese Maxey",
+        "time_remaining_q1": "11:29",
+        "first_score": "Indiana 0 - Philadelphia 2",
+        "basis": "First live 0-2 game state at Q1 11:29, plus Q1 9:46 box score showing Maxey 2 points and the only Philadelphia made field goal before Jaylen Brown's later 3",
+        "sources": [
+          "https://www.reddit.com/r/NBAScoreboard/comments/1xwtr6n/game_thread_indiana_pacers_58_vs_philadelphia/",
+          "https://www.reddit.com/r/sixers/comments/1xx0kqo/game_thread_indiana_pacers_58_vs_philadelphia/"
+        ]
+      }
     }
   ]
 }
