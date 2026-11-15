@@ -9,7 +9,7 @@ from pathlib import Path
 
 from . import __version__
 from .model import MODEL_VERSION, predict_game, score_predictions
-from .source import get_completed_game, get_reported_starters, get_schedule
+from .espn import get_completed_game, get_reported_starters, get_schedule, SOURCE
 
 LOG = logging.getLogger("first_baskets")
 DATA = Path("data")
@@ -38,11 +38,16 @@ def save_history(history):
 
 
 def backfill(schedule: list[dict], history: list[dict], max_new: int) -> dict:
+    sources = {g.get("data_source") for g in history}
+    if sources and sources != {SOURCE}:
+        raise RuntimeError(f"Mixed or unverified historical providers: {sources}. Refusing cross-ID training.")
     seen = {g["game_id"] for g in history}
     candidates = [g for g in schedule if g["status"] == 3 and g["game_id"] not in seen and
                   datetime.fromisoformat(g["tipoff_utc"]) < now_utc()]
     newly = 0
     failures = []
+    # Seed recent training first so initial runs do not forecast from stale October-only data.
+    candidates.reverse()
     for g in candidates[:max_new]:
         try:
             game = get_completed_game(g)
@@ -69,6 +74,7 @@ def upcoming_predictions(schedule: list[dict], history: list[dict], n: int) -> d
             confirmed = get_reported_starters(g) if near_tip else None
             p = predict_game(g, history, confirmed=confirmed, n=n)
             p["generated_at_utc"] = now.isoformat()
+            p["data_source"] = SOURCE
             predictions.append(p)
         except (ValueError, RuntimeError, KeyError) as exc:
             skipped.append({"game_id": g["game_id"], "matchup": f"{g['away']['code']} @ {g['home']['code']}", "reason": str(exc)})
@@ -87,7 +93,9 @@ def persist_snapshots(board: dict):
         # One snapshot when new/lineups change; retain periodic latest pre-tip for grading.
         elapsed = (datetime.fromisoformat(prediction["generated_at_utc"]) -
                    datetime.fromisoformat(previous["generated_at_utc"])).total_seconds() if previous else float("inf")
-        if previous is None or previous["lineup_status"] != prediction["lineup_status"] or current_ids != prior_ids or elapsed >= 3600:
+        changed_top = bool(previous and previous["predictions"][0]["id"] != prediction["predictions"][0]["id"])
+        changed_probability = bool(previous and abs(previous["predictions"][0]["probability"] - prediction["predictions"][0]["probability"]) >= 0.015)
+        if previous is None or previous["lineup_status"] != prediction["lineup_status"] or current_ids != prior_ids or changed_top or changed_probability or elapsed >= 900:
             snapshots.append(prediction)
     write_json(path, snapshots)
 
@@ -117,17 +125,23 @@ def grade_live(history: list[dict]) -> dict:
 
 def aggregate(rows):
     valid = [r for r in rows if r.get("graded")]
+    covered = [r for r in valid if not r.get("lineup_miss")]
     def avg(key):
-        return round(sum(r[key] for r in valid) / len(valid), 5) if valid else None
+        return round(sum(r[key] for r in covered) / len(covered), 5) if covered else None
+    def avg_all(key):
+        present = [r[key] for r in valid if key in r]
+        return round(sum(present) / len(present), 5) if present else None
     return {"eligible_predictions": len(rows), "graded_predictions": len(valid),
-            "lineup_misses": len(rows) - len(valid),
+            "lineup_misses": sum(bool(r.get("lineup_miss")) for r in valid) + len(rows) - len(valid),
             "top1_hits": sum(r.get("top1", 0) for r in valid),
             "top3_hits": sum(r.get("top3", 0) for r in valid),
             "top1_rate_all_predictions": round(sum(r.get("top1", 0) for r in valid) / len(rows), 5) if rows else None,
             "top3_rate_all_predictions": round(sum(r.get("top3", 0) for r in valid) / len(rows), 5) if rows else None,
             "mean_log_loss_on_covered": avg("log_loss"),
             "uniform_log_loss_on_covered": avg("uniform_log_loss"),
-            "mean_brier_on_covered": avg("brier"), "uniform_brier_on_covered": avg("uniform_brier")}
+            "mean_brier_on_covered": avg("brier"), "uniform_brier_on_covered": avg("uniform_brier"),
+            "mean_log_loss_all": avg_all("log_loss"), "uniform_log_loss_all": avg_all("uniform_log_loss"),
+            "mean_brier_all": avg_all("brier"), "uniform_brier_all": avg_all("uniform_brier")}
 
 
 def backtest(history: list[dict], n: int) -> dict:
