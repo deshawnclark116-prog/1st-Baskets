@@ -72,7 +72,7 @@ class ESPNAdapterTests(unittest.TestCase):
              patch("basketbot.espn.time.sleep"):
             games = get_schedule(datetime(2026, 11, 15, tzinfo=timezone.utc))
         self.assertEqual(len(games), 1)  # Dedupe same event across months.
-        self.assertEqual(fetch.call_count, 3)  # Oct, Nov, Dec.
+        self.assertEqual(fetch.call_count, 10)  # Previous Oct-Apr plus current Oct-Dec.
 
     def test_first_basket_skips_free_throws_and_missed_shots(self):
         game = normalize_game(meta(), summary())
