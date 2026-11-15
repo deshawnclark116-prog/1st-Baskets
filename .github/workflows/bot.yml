@@ -31,6 +31,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Sync latest committed history before any calculation
+        run: |
+          git fetch --prune origin "${GITHUB_REF_NAME}"
+          git reset --hard "origin/${GITHUB_REF_NAME}"
       - name: Run deterministic offline tests
         run: python -m unittest discover -s tests -v
       - name: Collect, predict, or backtest
