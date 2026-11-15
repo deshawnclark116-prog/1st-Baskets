@@ -129,7 +129,7 @@ def aggregate(rows):
     def avg(key):
         return round(sum(r[key] for r in covered) / len(covered), 5) if covered else None
     def avg_all(key):
-        present = [r[key] for r in valid if key in r]
+        present = [r[key] for r in rows if key in r]
         return round(sum(present) / len(present), 5) if present else None
     return {"eligible_predictions": len(rows), "graded_predictions": len(valid),
             "lineup_misses": sum(bool(r.get("lineup_miss")) for r in valid) + len(rows) - len(valid),
@@ -140,8 +140,8 @@ def aggregate(rows):
             "mean_log_loss_on_covered": avg("log_loss"),
             "uniform_log_loss_on_covered": avg("uniform_log_loss"),
             "mean_brier_on_covered": avg("brier"), "uniform_brier_on_covered": avg("uniform_brier"),
-            "mean_log_loss_all": avg_all("log_loss"), "uniform_log_loss_all": avg_all("uniform_log_loss"),
-            "mean_brier_all": avg_all("brier"), "uniform_brier_all": avg_all("uniform_brier")}
+            "mean_log_loss_all": avg_all("log_loss_all"), "uniform_log_loss_all": avg_all("uniform_log_loss_all"),
+            "mean_brier_all": avg_all("brier_all"), "uniform_brier_all": avg_all("uniform_brier_all")}
 
 
 def backtest(history: list[dict], n: int) -> dict:
