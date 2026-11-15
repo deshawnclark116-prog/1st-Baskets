@@ -28,7 +28,7 @@ def infer_lineup(team_id: str, history: list[dict]) -> list[dict]:
         raw = str(value or "").strip()
         if raw.startswith("PT"):
             import re
-            match = re.fullmatch(r"PT(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+(?:\\.\\d+)?)S)?", raw)
+            match = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?", raw)
             return (int(match[1] or 0) * 60 + int(match[2] or 0) + float(match[3] or 0) / 60) if match else 0
         try:
             return float(raw.split(":")[0])
