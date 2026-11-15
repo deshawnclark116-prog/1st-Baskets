@@ -44,10 +44,14 @@ jobs:
               python -m basketbot run --max-new 150 --simulations 40000
               if [ "${{ github.event_name }}" = push ]; then
                 python -m basketbot backtest --simulations 5000
+                python -m basketbot.research
               fi
               ;;
             backfill) python -m basketbot backfill --max-new 350 ;;
-            backtest) python -m basketbot backtest --simulations 5000 ;;
+            backtest)
+              python -m basketbot backtest --simulations 5000
+              python -m basketbot.research
+              ;;
             *) echo 'Unrecognized mode' >&2; exit 2 ;;
           esac
       - name: Save research artifacts
