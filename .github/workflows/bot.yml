@@ -1,5 +1,11 @@
 name: First Basket Bot
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'basketbot/**'
+      - 'tests/**'
+      - '.github/workflows/bot.yml'
   workflow_dispatch:
     inputs:
       command:
