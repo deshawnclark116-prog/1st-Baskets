@@ -1,0 +1,23 @@
+{
+  "description": "User challenge: first-basket predictions must be graded honestly. This file is not the automated official game grader.",
+  "tests": [
+    {
+      "test_id": 1,
+      "game_id": "401909985",
+      "game_date": "2026-11-15",
+      "matchup": "Indiana Pacers @ Philadelphia 76ers",
+      "target": "first_made_field_goal",
+      "final_human_selection": "Pascal Siakam",
+      "official_model_forecast_at_utc": "2026-11-15T17:52:51.764893+00:00",
+      "source_model": "opening-possession-v2-espn",
+      "saved_model_top_pick": "Pascal Siakam",
+      "saved_model_top_pick_probability": 0.1723,
+      "saved_lineup_status": "projected",
+      "saved_quality": "watchlist_only",
+      "user_reported_correct": false,
+      "official_first_fg_scorer": null,
+      "status": "user_reported_miss_pending_official_game_verification",
+      "note": "Preserve as a failed user-challenge pick. Do not alter the original pregame snapshot. Do not count as officially graded until game PBP confirms actual first made FG; never backfill a post-tip forecast."
+    }
+  ]
+}
