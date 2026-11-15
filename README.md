@@ -5,7 +5,7 @@ An autonomous, **research-stage NBA first made field goal** forecast engine. The
 ## Current operational status
 
 - **Data source:** ESPN Site API v2 scoreboard and game summaries, including play-by-play and box scores. This unofficial feed replaced the NBA CDN after GitHub Actions received HTTP 403 responses. ESPN team/player/game IDs are isolated; never merge provider histories without an explicit verified mapping.
-- **Backfill:** Regular-season ESPN game events from October through the current month, with 35 days of scheduled future coverage. Source failures fail the run; fabricated games are prohibited.
+- **Backfill:** ESPN regular-season events from the current and previous NBA seasons (October-April), plus the next 35 days. Completed-game ingestion is incremental, most recent first. Source failures fail the run; fabricated games are prohibited.
 - **Research engine:** Recent starter probability, first-shot allocation, first-four-shot data, shooting efficiency, and opening possession simulator. **40,000** seeded scenarios per upcoming game produce a distribution across ten projected or reported starters.
 - **Forecast provenance:** An explicit five-starter pre-tip feed listing is labeled `espn_feed_reported`; otherwise the board says `projected` and `watchlist_only`. ESPN reporting is not the same as independent verified lineups.
 - **Automatic workflow:** GitHub Actions scheduled twice per hour (subject to scheduler delays), with incremental game ingestion, prediction snapshots, postgame grading, and weekly chronological backtesting. Code pushes also run a research backtest.
