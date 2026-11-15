@@ -163,7 +163,13 @@ def backtest(history: list[dict], n: int) -> dict:
             rows.append({"game_id": game["game_id"], "tipoff_utc": game["tipoff_utc"],
                          "graded": False, "reason": "unavailable_lineup: " + str(exc)})
     cut = max(0, int(len(rows) * 0.75))
+    catalog = read_json(DATA / "schedule.json", [])
+    finished = {g["game_id"] for g in catalog if g.get("status") == 3}
+    archived = {g["game_id"] for g in ordered}
+    coverage = round(len(finished & archived) / len(finished), 5) if finished else None
     report = {"model": MODEL_VERSION, "generated_at_utc": now_utc().isoformat(),
+              "catalog_finished_games": len(finished), "archive_coverage": coverage,
+              "missing_finished_games": len(finished - archived),
               "scope": "walk-forward projected lineups; never actual same-game starting lineup",
               "history_games": len(ordered), "all_games": aggregate(rows),
               "last_25_percent_holdout": aggregate(rows[cut:]), "holdout_start": rows[cut]["tipoff_utc"] if cut < len(rows) else None,
@@ -185,6 +191,7 @@ def main():
     history = read_json(DATA / "history.json", [])
     if args.command != "backtest":
         games = get_schedule()  # Fail loudly if source unavailable; no synthetic replacement.
+        write_json(DATA / "schedule.json", games)  # Source-derived completeness manifest.
         ingest = backfill(games, history, args.max_new)
         print("Ingestion:", json.dumps(ingest))
         if args.command == "run":
