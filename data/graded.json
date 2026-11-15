@@ -1,0 +1,21 @@
+{
+  "eligible_predictions": 0,
+  "generated_at_utc": "2026-11-15T15:25:02.950401+00:00",
+  "graded_predictions": 0,
+  "lineup_misses": 0,
+  "mean_brier_all": null,
+  "mean_brier_on_covered": null,
+  "mean_log_loss_all": null,
+  "mean_log_loss_on_covered": null,
+  "model": "opening-possession-v1",
+  "rows": [],
+  "scope": "latest genuine pre-tip snapshot per game (no hindsight)",
+  "top1_hits": 0,
+  "top1_rate_all_predictions": null,
+  "top3_hits": 0,
+  "top3_rate_all_predictions": null,
+  "uniform_brier_all": null,
+  "uniform_brier_on_covered": null,
+  "uniform_log_loss_all": null,
+  "uniform_log_loss_on_covered": null
+}
