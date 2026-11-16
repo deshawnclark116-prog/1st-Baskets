@@ -4,8 +4,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909994",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "ORL @ BOS",
       "model": "opening-possession-v2-espn",
@@ -109,8 +109,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909995",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "CHI @ CLE",
       "model": "opening-possession-v2-espn",
@@ -214,8 +214,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909996",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "MEM @ WSH",
       "model": "opening-possession-v2-espn",
@@ -319,8 +319,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909997",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "PHI @ BKN",
       "model": "opening-possession-v2-espn",
@@ -424,8 +424,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909998",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "HOU @ MIA",
       "model": "opening-possession-v2-espn",
@@ -529,8 +529,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909999",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "POR @ MIN",
       "model": "opening-possession-v2-espn",
@@ -634,8 +634,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910000",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "GS @ NO",
       "model": "opening-possession-v2-espn",
@@ -739,8 +739,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910001",
-      "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
-      "historical_games_available": 1388,
+      "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
+      "historical_games_available": 1432,
       "lineup_status": "projected",
       "matchup": "PHX @ DEN",
       "model": "opening-possession-v2-espn",
@@ -842,7 +842,7 @@
       "tipoff_utc": "2026-11-17T02:00:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-11-16T06:14:01.890433+00:00",
+  "generated_at_utc": "2026-11-16T16:20:54.484906+00:00",
   "model": "opening-possession-v2-espn",
   "skipped": [],
   "version": "0.1.0"
