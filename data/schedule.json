@@ -21351,6 +21351,20 @@
   },
   {
     "away": {
+      "code": "MIA",
+      "id": "14"
+    },
+    "data_source": "espn_site_v2",
+    "game_id": "401910054",
+    "home": {
+      "code": "CLE",
+      "id": "5"
+    },
+    "status": 1,
+    "tipoff_utc": "2026-11-29T20:30:00+00:00"
+  },
+  {
+    "away": {
       "code": "LAL",
       "id": "13"
     },
@@ -21390,20 +21404,6 @@
     },
     "status": 1,
     "tipoff_utc": "2026-11-29T22:00:00+00:00"
-  },
-  {
-    "away": {
-      "code": "MIA",
-      "id": "14"
-    },
-    "data_source": "espn_site_v2",
-    "game_id": "401910054",
-    "home": {
-      "code": "CLE",
-      "id": "5"
-    },
-    "status": 1,
-    "tipoff_utc": "2026-11-29T23:00:00+00:00"
   },
   {
     "away": {
