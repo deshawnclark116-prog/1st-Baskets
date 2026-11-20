@@ -4,7 +4,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909305",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "CHA @ ATL",
@@ -109,7 +109,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909306",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "ORL @ BKN",
@@ -214,7 +214,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909307",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "IND @ CLE",
@@ -319,7 +319,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909308",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "TOR @ DET",
@@ -424,7 +424,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909309",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "WSH @ CHI",
@@ -529,7 +529,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909310",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "NO @ OKC",
@@ -634,7 +634,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909311",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "PHX @ UTAH",
@@ -739,7 +739,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909312",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "HOU @ DEN",
@@ -844,7 +844,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909313",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "SAC @ LAL",
@@ -949,7 +949,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910023",
-      "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
       "historical_games_available": 1461,
       "lineup_status": "projected",
       "matchup": "MIL @ PHI",
@@ -1050,9 +1050,429 @@
       "simulations": 40000,
       "tip_home_probability": 0.5,
       "tipoff_utc": "2026-11-21T18:00:00+00:00"
+    },
+    {
+      "data_source": "espn_site_v2",
+      "game_id": "401910024",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
+      "historical_games_available": 1461,
+      "lineup_status": "projected",
+      "matchup": "POR @ NY",
+      "model": "opening-possession-v2-espn",
+      "predictions": [
+        {
+          "fg_probability": 0.4234,
+          "id": "3934672",
+          "name": "Jalen Brunson",
+          "probability": 0.16228,
+          "shot_share": 0.3314,
+          "team": "NY",
+          "team_id": "18"
+        },
+        {
+          "fg_probability": 0.4173,
+          "id": "5105565",
+          "name": "Donovan Clingan",
+          "probability": 0.1515,
+          "shot_share": 0.3196,
+          "team": "POR",
+          "team_id": "22"
+        },
+        {
+          "fg_probability": 0.4838,
+          "id": "3136195",
+          "name": "Karl-Anthony Towns",
+          "probability": 0.14147,
+          "shot_share": 0.2478,
+          "team": "NY",
+          "team_id": "18"
+        },
+        {
+          "fg_probability": 0.4022,
+          "id": "4431736",
+          "name": "Toumani Camara",
+          "probability": 0.13465,
+          "shot_share": 0.2859,
+          "team": "POR",
+          "team_id": "22"
+        },
+        {
+          "fg_probability": 0.3923,
+          "id": "6606",
+          "name": "Damian Lillard",
+          "probability": 0.12187,
+          "shot_share": 0.276,
+          "team": "POR",
+          "team_id": "22"
+        },
+        {
+          "fg_probability": 0.5015,
+          "id": "3147657",
+          "name": "Mikal Bridges",
+          "probability": 0.10265,
+          "shot_share": 0.1745,
+          "team": "NY",
+          "team_id": "18"
+        },
+        {
+          "fg_probability": 0.4673,
+          "id": "3934719",
+          "name": "OG Anunoby",
+          "probability": 0.09738,
+          "shot_share": 0.184,
+          "team": "NY",
+          "team_id": "18"
+        },
+        {
+          "fg_probability": 0.4637,
+          "id": "5081727",
+          "name": "Sidy Cissoko",
+          "probability": 0.05145,
+          "shot_share": 0.0998,
+          "team": "POR",
+          "team_id": "22"
+        },
+        {
+          "fg_probability": 0.3936,
+          "id": "3062679",
+          "name": "Josh Hart",
+          "probability": 0.0272,
+          "shot_share": 0.0624,
+          "team": "NY",
+          "team_id": "18"
+        },
+        {
+          "fg_probability": 0.4418,
+          "id": "4703889",
+          "name": "Jayson Kent",
+          "probability": 0.00955,
+          "shot_share": 0.0187,
+          "team": "POR",
+          "team_id": "22"
+        }
+      ],
+      "quality": "watchlist_only",
+      "simulations": 40000,
+      "tip_home_probability": 0.5,
+      "tipoff_utc": "2026-11-22T00:30:00+00:00"
+    },
+    {
+      "data_source": "espn_site_v2",
+      "game_id": "401910025",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
+      "historical_games_available": 1461,
+      "lineup_status": "projected",
+      "matchup": "LAC @ DAL",
+      "model": "opening-possession-v2-espn",
+      "predictions": [
+        {
+          "fg_probability": 0.4526,
+          "id": "5041939",
+          "name": "Cooper Flagg",
+          "probability": 0.24782,
+          "shot_share": 0.5181,
+          "team": "DAL",
+          "team_id": "6"
+        },
+        {
+          "fg_probability": 0.493,
+          "id": "4396907",
+          "name": "Darius Garland",
+          "probability": 0.20235,
+          "shot_share": 0.3781,
+          "team": "LAC",
+          "team_id": "12"
+        },
+        {
+          "fg_probability": 0.4833,
+          "id": "3448",
+          "name": "Brook Lopez",
+          "probability": 0.11933,
+          "shot_share": 0.2271,
+          "team": "LAC",
+          "team_id": "12"
+        },
+        {
+          "fg_probability": 0.4411,
+          "id": "6442",
+          "name": "Kyrie Irving",
+          "probability": 0.0973,
+          "shot_share": 0.2017,
+          "team": "DAL",
+          "team_id": "6"
+        },
+        {
+          "fg_probability": 0.4837,
+          "id": "3936099",
+          "name": "Derrick Jones Jr.",
+          "probability": 0.0855,
+          "shot_share": 0.1617,
+          "team": "LAC",
+          "team_id": "12"
+        },
+        {
+          "fg_probability": 0.4042,
+          "id": "4066648",
+          "name": "Rui Hachimura",
+          "probability": 0.07393,
+          "shot_share": 0.1671,
+          "team": "LAC",
+          "team_id": "12"
+        },
+        {
+          "fg_probability": 0.4952,
+          "id": "4278049",
+          "name": "Daniel Gafford",
+          "probability": 0.05525,
+          "shot_share": 0.1036,
+          "team": "DAL",
+          "team_id": "6"
+        },
+        {
+          "fg_probability": 0.4301,
+          "id": "4278078",
+          "name": "P.J. Washington",
+          "probability": 0.04752,
+          "shot_share": 0.107,
+          "team": "DAL",
+          "team_id": "6"
+        },
+        {
+          "fg_probability": 0.4935,
+          "id": "3138160",
+          "name": "Caleb Martin",
+          "probability": 0.03865,
+          "shot_share": 0.0696,
+          "team": "DAL",
+          "team_id": "6"
+        },
+        {
+          "fg_probability": 0.4536,
+          "id": "2991139",
+          "name": "Kris Dunn",
+          "probability": 0.03235,
+          "shot_share": 0.0659,
+          "team": "LAC",
+          "team_id": "12"
+        }
+      ],
+      "quality": "watchlist_only",
+      "simulations": 40000,
+      "tip_home_probability": 0.5,
+      "tipoff_utc": "2026-11-22T01:00:00+00:00"
+    },
+    {
+      "data_source": "espn_site_v2",
+      "game_id": "401910026",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
+      "historical_games_available": 1461,
+      "lineup_status": "projected",
+      "matchup": "MEM @ MIN",
+      "model": "opening-possession-v2-espn",
+      "predictions": [
+        {
+          "fg_probability": 0.5009,
+          "id": "4431671",
+          "name": "Jaden McDaniels",
+          "probability": 0.16398,
+          "shot_share": 0.2948,
+          "team": "MIN",
+          "team_id": "16"
+        },
+        {
+          "fg_probability": 0.4312,
+          "id": "5041935",
+          "name": "Cameron Boozer",
+          "probability": 0.1403,
+          "shot_share": 0.3048,
+          "team": "MEM",
+          "team_id": "29"
+        },
+        {
+          "fg_probability": 0.4041,
+          "id": "4432816",
+          "name": "LaMelo Ball",
+          "probability": 0.12612,
+          "shot_share": 0.2818,
+          "team": "MIN",
+          "team_id": "16"
+        },
+        {
+          "fg_probability": 0.4646,
+          "id": "5112087",
+          "name": "Jaylen Wells",
+          "probability": 0.11173,
+          "shot_share": 0.2244,
+          "team": "MEM",
+          "team_id": "29"
+        },
+        {
+          "fg_probability": 0.4542,
+          "id": "4903027",
+          "name": "Cedric Coward",
+          "probability": 0.11013,
+          "shot_share": 0.2209,
+          "team": "MEM",
+          "team_id": "29"
+        },
+        {
+          "fg_probability": 0.4627,
+          "id": "4433247",
+          "name": "Jonathan Kuminga",
+          "probability": 0.09667,
+          "shot_share": 0.1914,
+          "team": "MIN",
+          "team_id": "16"
+        },
+        {
+          "fg_probability": 0.5314,
+          "id": "4600663",
+          "name": "Zach Edey",
+          "probability": 0.09062,
+          "shot_share": 0.158,
+          "team": "MEM",
+          "team_id": "29"
+        },
+        {
+          "fg_probability": 0.471,
+          "id": "4397002",
+          "name": "Ayo Dosunmu",
+          "probability": 0.08855,
+          "shot_share": 0.1749,
+          "team": "MIN",
+          "team_id": "16"
+        },
+        {
+          "fg_probability": 0.4516,
+          "id": "4433083",
+          "name": "Cam Spencer",
+          "probability": 0.04677,
+          "shot_share": 0.0919,
+          "team": "MEM",
+          "team_id": "29"
+        },
+        {
+          "fg_probability": 0.4137,
+          "id": "3032976",
+          "name": "Rudy Gobert",
+          "probability": 0.02513,
+          "shot_share": 0.0571,
+          "team": "MIN",
+          "team_id": "16"
+        }
+      ],
+      "quality": "watchlist_only",
+      "simulations": 40000,
+      "tip_home_probability": 0.5,
+      "tipoff_utc": "2026-11-22T01:00:00+00:00"
+    },
+    {
+      "data_source": "espn_site_v2",
+      "game_id": "401910027",
+      "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
+      "historical_games_available": 1461,
+      "lineup_status": "projected",
+      "matchup": "NO @ SA",
+      "model": "opening-possession-v2-espn",
+      "predictions": [
+        {
+          "fg_probability": 0.4764,
+          "id": "5144091",
+          "name": "Jeremiah Fears",
+          "probability": 0.21663,
+          "shot_share": 0.4291,
+          "team": "NO",
+          "team_id": "3"
+        },
+        {
+          "fg_probability": 0.5462,
+          "id": "5104157",
+          "name": "Victor Wembanyama",
+          "probability": 0.14635,
+          "shot_share": 0.2491,
+          "team": "SA",
+          "team_id": "24"
+        },
+        {
+          "fg_probability": 0.3984,
+          "id": "4395630",
+          "name": "Devin Vassell",
+          "probability": 0.12815,
+          "shot_share": 0.2913,
+          "team": "SA",
+          "team_id": "24"
+        },
+        {
+          "fg_probability": 0.5301,
+          "id": "4395628",
+          "name": "Zion Williamson",
+          "probability": 0.12233,
+          "shot_share": 0.209,
+          "team": "NO",
+          "team_id": "3"
+        },
+        {
+          "fg_probability": 0.489,
+          "id": "4066259",
+          "name": "De'Aaron Fox",
+          "probability": 0.09573,
+          "shot_share": 0.1819,
+          "team": "SA",
+          "team_id": "24"
+        },
+        {
+          "fg_probability": 0.4143,
+          "id": "4845367",
+          "name": "Stephon Castle",
+          "probability": 0.08682,
+          "shot_share": 0.1961,
+          "team": "SA",
+          "team_id": "24"
+        },
+        {
+          "fg_probability": 0.4015,
+          "id": "4397136",
+          "name": "Saddiq Bey",
+          "probability": 0.07285,
+          "shot_share": 0.1694,
+          "team": "NO",
+          "team_id": "3"
+        },
+        {
+          "fg_probability": 0.4129,
+          "id": "4277813",
+          "name": "Herbert Jones",
+          "probability": 0.07195,
+          "shot_share": 0.1595,
+          "team": "NO",
+          "team_id": "3"
+        },
+        {
+          "fg_probability": 0.4862,
+          "id": "5037871",
+          "name": "Dylan Harper",
+          "probability": 0.04383,
+          "shot_share": 0.0817,
+          "team": "SA",
+          "team_id": "24"
+        },
+        {
+          "fg_probability": 0.4435,
+          "id": "5061589",
+          "name": "Yves Missi",
+          "probability": 0.01537,
+          "shot_share": 0.033,
+          "team": "NO",
+          "team_id": "3"
+        }
+      ],
+      "quality": "watchlist_only",
+      "simulations": 40000,
+      "tip_home_probability": 0.5,
+      "tipoff_utc": "2026-11-22T01:00:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-11-20T12:07:14.825296+00:00",
+  "generated_at_utc": "2026-11-20T20:41:17.779450+00:00",
   "model": "opening-possession-v2-espn",
   "skipped": [],
   "version": "0.1.0"

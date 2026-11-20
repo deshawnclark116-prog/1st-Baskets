@@ -21673,20 +21673,6 @@
   },
   {
     "away": {
-      "code": "MIN",
-      "id": "16"
-    },
-    "data_source": "espn_site_v2",
-    "game_id": "401910074",
-    "home": {
-      "code": "POR",
-      "id": "22"
-    },
-    "status": 1,
-    "tipoff_utc": "2026-12-02T03:00:00+00:00"
-  },
-  {
-    "away": {
       "code": "UTAH",
       "id": "26"
     },
@@ -21695,6 +21681,20 @@
     "home": {
       "code": "GS",
       "id": "9"
+    },
+    "status": 1,
+    "tipoff_utc": "2026-12-02T03:00:00+00:00"
+  },
+  {
+    "away": {
+      "code": "MIN",
+      "id": "16"
+    },
+    "data_source": "espn_site_v2",
+    "game_id": "401910074",
+    "home": {
+      "code": "POR",
+      "id": "22"
     },
     "status": 1,
     "tipoff_utc": "2026-12-02T04:00:00+00:00"
