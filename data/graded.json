@@ -1,12 +1,12 @@
 {
-  "eligible_predictions": 47,
-  "generated_at_utc": "2026-11-21T17:45:08.349761+00:00",
-  "graded_predictions": 38,
+  "eligible_predictions": 48,
+  "generated_at_utc": "2026-11-21T23:06:16.821285+00:00",
+  "graded_predictions": 39,
   "lineup_misses": 9,
-  "mean_brier_all": 0.08445,
-  "mean_brier_on_covered": 0.08042,
-  "mean_log_loss_all": 5.34367,
-  "mean_log_loss_on_covered": 2.24648,
+  "mean_brier_all": 0.08438,
+  "mean_brier_on_covered": 0.08044,
+  "mean_log_loss_all": 5.27849,
+  "mean_log_loss_on_covered": 2.24567,
   "model": "opening-possession-v2-espn",
   "rows": [
     {
@@ -874,15 +874,34 @@
       "uniform_brier_all": 0.08181818181818182,
       "uniform_log_loss": 2.3025850929940455,
       "uniform_log_loss_all": 2.3025850929940455
+    },
+    {
+      "brier": 0.08114203030909091,
+      "brier_all": 0.08114203030909091,
+      "first_scorer": "1966",
+      "game_id": "401910023",
+      "graded": true,
+      "lineup_miss": false,
+      "lineup_status": "projected",
+      "log_loss": 2.215032195986184,
+      "log_loss_all": 2.215032195986184,
+      "tipoff_utc": "2026-11-21T18:00:00+00:00",
+      "top1": 0,
+      "top3": 0,
+      "top_prediction": "Tyrese Maxey",
+      "uniform_brier": 0.08181818181818182,
+      "uniform_brier_all": 0.08181818181818182,
+      "uniform_log_loss": 2.3025850929940455,
+      "uniform_log_loss_all": 2.3025850929940455
     }
   ],
   "scope": "latest genuine pre-tip snapshot per game (no hindsight)",
   "top1_hits": 6,
-  "top1_rate_all_predictions": 0.12766,
+  "top1_rate_all_predictions": 0.125,
   "top3_hits": 18,
-  "top3_rate_all_predictions": 0.38298,
-  "uniform_brier_all": 0.0853,
+  "top3_rate_all_predictions": 0.375,
+  "uniform_brier_all": 0.08523,
   "uniform_brier_on_covered": 0.08182,
-  "uniform_log_loss_all": 5.38903,
+  "uniform_log_loss_all": 5.32473,
   "uniform_log_loss_on_covered": 2.30259
 }

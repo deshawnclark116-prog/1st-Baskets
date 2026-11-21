@@ -443527,5 +443527,296 @@
     ],
     "tip_team_id": null,
     "tipoff_utc": "2026-11-21T03:00:00+00:00"
+  },
+  {
+    "away": {
+      "code": "MIL",
+      "id": "15"
+    },
+    "data_source": "espn_site_v2",
+    "early_shots": [
+      {
+        "made": true,
+        "player_id": "1966",
+        "team_id": "20"
+      },
+      {
+        "made": false,
+        "player_id": "3133628",
+        "team_id": "15"
+      },
+      {
+        "made": true,
+        "player_id": "5124612",
+        "team_id": "20"
+      },
+      {
+        "made": false,
+        "player_id": "4432848",
+        "team_id": "15"
+      },
+      {
+        "made": false,
+        "player_id": "4431678",
+        "team_id": "20"
+      },
+      {
+        "made": true,
+        "player_id": "4395725",
+        "team_id": "15"
+      },
+      {
+        "made": false,
+        "player_id": "5124612",
+        "team_id": "20"
+      },
+      {
+        "made": false,
+        "player_id": "3133628",
+        "team_id": "15"
+      }
+    ],
+    "first_fg": {
+      "player_id": "1966",
+      "team_id": "20"
+    },
+    "first_shot": {
+      "15": "3133628",
+      "20": "1966"
+    },
+    "game_id": "401910023",
+    "home": {
+      "code": "PHI",
+      "id": "20"
+    },
+    "players": [
+      {
+        "fga": 16,
+        "fgm": 4,
+        "id": "3134907",
+        "minutes": "33",
+        "name": "Kyle Kuzma",
+        "starter": true,
+        "team_id": "15"
+      },
+      {
+        "fga": 7,
+        "fgm": 4,
+        "id": "4432848",
+        "minutes": "25",
+        "name": "Jaime Jaquez Jr.",
+        "starter": true,
+        "team_id": "15"
+      },
+      {
+        "fga": 8,
+        "fgm": 1,
+        "id": "3133628",
+        "minutes": "26",
+        "name": "Myles Turner",
+        "starter": true,
+        "team_id": "15"
+      },
+      {
+        "fga": 23,
+        "fgm": 15,
+        "id": "4395725",
+        "minutes": "40",
+        "name": "Tyler Herro",
+        "starter": true,
+        "team_id": "15"
+      },
+      {
+        "fga": 9,
+        "fgm": 4,
+        "id": "4591725",
+        "minutes": "28",
+        "name": "Ryan Rollins",
+        "starter": true,
+        "team_id": "15"
+      },
+      {
+        "fga": 2,
+        "fgm": 1,
+        "id": "5164559",
+        "minutes": "14",
+        "name": "Nate Ament",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 6,
+        "fgm": 3,
+        "id": "5105623",
+        "minutes": "22",
+        "name": "Kel'el Ware",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 1,
+        "fgm": 0,
+        "id": "2991043",
+        "minutes": "5",
+        "name": "Caris LeVert",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 3,
+        "fgm": 3,
+        "id": "4397475",
+        "minutes": "12",
+        "name": "AJ Green",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 20,
+        "fgm": 12,
+        "id": "5082206",
+        "minutes": "26",
+        "name": "Brayden Burries",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 6,
+        "fgm": 1,
+        "id": "5214640",
+        "minutes": "10",
+        "name": "Kasparas Jakucionis",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4277922",
+        "minutes": "0",
+        "name": "Jericho Sims",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4277843",
+        "minutes": "0",
+        "name": "Gary Trent Jr.",
+        "starter": false,
+        "team_id": "15"
+      },
+      {
+        "fga": 14,
+        "fgm": 9,
+        "id": "1966",
+        "minutes": "35",
+        "name": "LeBron James",
+        "starter": true,
+        "team_id": "20"
+      },
+      {
+        "fga": 17,
+        "fgm": 7,
+        "id": "3059318",
+        "minutes": "34",
+        "name": "Joel Embiid",
+        "starter": true,
+        "team_id": "20"
+      },
+      {
+        "fga": 6,
+        "fgm": 4,
+        "id": "2581018",
+        "minutes": "35",
+        "name": "Kentavious Caldwell-Pope",
+        "starter": true,
+        "team_id": "20"
+      },
+      {
+        "fga": 11,
+        "fgm": 4,
+        "id": "4431678",
+        "minutes": "36",
+        "name": "Tyrese Maxey",
+        "starter": true,
+        "team_id": "20"
+      },
+      {
+        "fga": 12,
+        "fgm": 5,
+        "id": "5124612",
+        "minutes": "38",
+        "name": "VJ Edgecombe",
+        "starter": true,
+        "team_id": "20"
+      },
+      {
+        "fga": 7,
+        "fgm": 4,
+        "id": "4432446",
+        "minutes": "20",
+        "name": "Jabari Walker",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 6,
+        "fgm": 5,
+        "id": "4870562",
+        "minutes": "11",
+        "name": "Dominick Barlow",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 13,
+        "fgm": 6,
+        "id": "4351851",
+        "minutes": "26",
+        "name": "Anfernee Simons",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 2,
+        "fgm": 1,
+        "id": "4873090",
+        "minutes": "6",
+        "name": "Labaron Philon Jr.",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4711297",
+        "minutes": "0",
+        "name": "Justin Edwards",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "3904625",
+        "minutes": "0",
+        "name": "Tacko Fall",
+        "starter": false,
+        "team_id": "20"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4433144",
+        "minutes": "0",
+        "name": "Caleb Love",
+        "starter": false,
+        "team_id": "20"
+      }
+    ],
+    "tip_team_id": null,
+    "tipoff_utc": "2026-11-21T18:00:00+00:00"
   }
 ]
