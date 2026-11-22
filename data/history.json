@@ -443818,5 +443818,305 @@
     ],
     "tip_team_id": null,
     "tipoff_utc": "2026-11-21T18:00:00+00:00"
+  },
+  {
+    "away": {
+      "code": "POR",
+      "id": "22"
+    },
+    "data_source": "espn_site_v2",
+    "early_shots": [
+      {
+        "made": true,
+        "player_id": "3934672",
+        "team_id": "18"
+      },
+      {
+        "made": true,
+        "player_id": "4683021",
+        "team_id": "22"
+      },
+      {
+        "made": false,
+        "player_id": "5081727",
+        "team_id": "22"
+      },
+      {
+        "made": false,
+        "player_id": "3934672",
+        "team_id": "18"
+      },
+      {
+        "made": true,
+        "player_id": "6585",
+        "team_id": "18"
+      },
+      {
+        "made": false,
+        "player_id": "5105565",
+        "team_id": "22"
+      },
+      {
+        "made": false,
+        "player_id": "5081727",
+        "team_id": "22"
+      },
+      {
+        "made": true,
+        "player_id": "3914044",
+        "team_id": "18"
+      }
+    ],
+    "first_fg": {
+      "player_id": "3934672",
+      "team_id": "18"
+    },
+    "first_shot": {
+      "18": "3934672",
+      "22": "4683021"
+    },
+    "game_id": "401910024",
+    "home": {
+      "code": "NY",
+      "id": "18"
+    },
+    "players": [
+      {
+        "fga": 10,
+        "fgm": 2,
+        "id": "4431736",
+        "minutes": "35",
+        "name": "Toumani Camara",
+        "starter": true,
+        "team_id": "22"
+      },
+      {
+        "fga": 13,
+        "fgm": 7,
+        "id": "4683021",
+        "minutes": "36",
+        "name": "Deni Avdija",
+        "starter": true,
+        "team_id": "22"
+      },
+      {
+        "fga": 11,
+        "fgm": 9,
+        "id": "5105565",
+        "minutes": "31",
+        "name": "Donovan Clingan",
+        "starter": true,
+        "team_id": "22"
+      },
+      {
+        "fga": 16,
+        "fgm": 5,
+        "id": "6606",
+        "minutes": "33",
+        "name": "Damian Lillard",
+        "starter": true,
+        "team_id": "22"
+      },
+      {
+        "fga": 8,
+        "fgm": 3,
+        "id": "5081727",
+        "minutes": "23",
+        "name": "Sidy Cissoko",
+        "starter": true,
+        "team_id": "22"
+      },
+      {
+        "fga": 2,
+        "fgm": 2,
+        "id": "4066211",
+        "minutes": "17",
+        "name": "Robert Williams III",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 2,
+        "fgm": 1,
+        "id": "4592435",
+        "minutes": "9",
+        "name": "Branden Carlson",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 14,
+        "fgm": 6,
+        "id": "3995",
+        "minutes": "31",
+        "name": "Jrue Holiday",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 8,
+        "fgm": 1,
+        "id": "4683678",
+        "minutes": "23",
+        "name": "Scoot Henderson",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 1,
+        "fgm": 0,
+        "id": "4703889",
+        "minutes": "3",
+        "name": "Jayson Kent",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4593043",
+        "minutes": "0",
+        "name": "John Tonje",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4066399",
+        "minutes": "0",
+        "name": "Micah Potter",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "5217746",
+        "minutes": "0",
+        "name": "Yang Hansen",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "4279888",
+        "minutes": "0",
+        "name": "Ja Morant",
+        "starter": false,
+        "team_id": "22"
+      },
+      {
+        "fga": 10,
+        "fgm": 3,
+        "id": "6585",
+        "minutes": "23",
+        "name": "Andre Drummond",
+        "starter": true,
+        "team_id": "18"
+      },
+      {
+        "fga": 7,
+        "fgm": 0,
+        "id": "3062679",
+        "minutes": "35",
+        "name": "Josh Hart",
+        "starter": true,
+        "team_id": "18"
+      },
+      {
+        "fga": 8,
+        "fgm": 5,
+        "id": "3147657",
+        "minutes": "28",
+        "name": "Mikal Bridges",
+        "starter": true,
+        "team_id": "18"
+      },
+      {
+        "fga": 14,
+        "fgm": 7,
+        "id": "3914044",
+        "minutes": "36",
+        "name": "Landry Shamet",
+        "starter": true,
+        "team_id": "18"
+      },
+      {
+        "fga": 23,
+        "fgm": 11,
+        "id": "3934672",
+        "minutes": "36",
+        "name": "Jalen Brunson",
+        "starter": true,
+        "team_id": "18"
+      },
+      {
+        "fga": 1,
+        "fgm": 0,
+        "id": "4897943",
+        "minutes": "3",
+        "name": "Dalton Knecht",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 3,
+        "fgm": 2,
+        "id": "5211983",
+        "minutes": "11",
+        "name": "Pacome Dadiet",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 3,
+        "fgm": 2,
+        "id": "4432808",
+        "minutes": "25",
+        "name": "James Wiseman",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 7,
+        "fgm": 3,
+        "id": "4277869",
+        "minutes": "15",
+        "name": "Jose Alvarado",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 4,
+        "fgm": 1,
+        "id": "4431823",
+        "minutes": "14",
+        "name": "Miles McBride",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 7,
+        "fgm": 3,
+        "id": "4433225",
+        "minutes": "13",
+        "name": "Tyler Kolek",
+        "starter": false,
+        "team_id": "18"
+      },
+      {
+        "fga": 0,
+        "fgm": 0,
+        "id": "5289900",
+        "minutes": "0",
+        "name": "Mohamed Diawara",
+        "starter": false,
+        "team_id": "18"
+      }
+    ],
+    "tip_team_id": null,
+    "tipoff_utc": "2026-11-22T00:30:00+00:00"
   }
 ]
