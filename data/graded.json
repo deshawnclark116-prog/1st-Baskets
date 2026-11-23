@@ -1,12 +1,12 @@
 {
-  "eligible_predictions": 53,
-  "generated_at_utc": "2026-11-22T18:38:28.995223+00:00",
-  "graded_predictions": 42,
+  "eligible_predictions": 54,
+  "generated_at_utc": "2026-11-23T00:12:58.670455+00:00",
+  "graded_predictions": 43,
   "lineup_misses": 11,
-  "mean_brier_all": 0.08439,
-  "mean_brier_on_covered": 0.07986,
-  "mean_log_loss_all": 5.58201,
-  "mean_log_loss_on_covered": 2.2195,
+  "mean_brier_all": 0.08444,
+  "mean_brier_on_covered": 0.08003,
+  "mean_log_loss_all": 5.52649,
+  "mean_log_loss_on_covered": 2.22797,
   "model": "opening-possession-v2-espn",
   "rows": [
     {
@@ -982,15 +982,34 @@
       "top_prediction": "Paul George",
       "uniform_brier_all": 0.1,
       "uniform_log_loss_all": 18.420680743952367
+    },
+    {
+      "brier": 0.08692860571818183,
+      "brier_all": 0.08692860571818183,
+      "first_scorer": "3908845",
+      "game_id": "401910029",
+      "graded": true,
+      "lineup_miss": false,
+      "lineup_status": "projected",
+      "log_loss": 2.5838875584817873,
+      "log_loss_all": 2.5838875584817873,
+      "tipoff_utc": "2026-11-22T20:30:00+00:00",
+      "top1": 0,
+      "top3": 0,
+      "top_prediction": "Cade Cunningham",
+      "uniform_brier": 0.08181818181818182,
+      "uniform_brier_all": 0.08181818181818182,
+      "uniform_log_loss": 2.3025850929940455,
+      "uniform_log_loss_all": 2.3025850929940455
     }
   ],
   "scope": "latest genuine pre-tip snapshot per game (no hindsight)",
   "top1_hits": 8,
-  "top1_rate_all_predictions": 0.15094,
+  "top1_rate_all_predictions": 0.14815,
   "top3_hits": 20,
-  "top3_rate_all_predictions": 0.37736,
-  "uniform_brier_all": 0.08559,
+  "top3_rate_all_predictions": 0.37037,
+  "uniform_brier_all": 0.08552,
   "uniform_brier_on_covered": 0.08182,
-  "uniform_log_loss_all": 5.64785,
+  "uniform_log_loss_all": 5.5859,
   "uniform_log_loss_on_covered": 2.30259
 }
