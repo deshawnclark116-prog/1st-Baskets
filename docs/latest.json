@@ -4,8 +4,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909314",
-      "generated_at_utc": "2026-11-24T04:57:01.583335+00:00",
-      "historical_games_available": 1491,
+      "generated_at_utc": "2026-11-24T15:44:32.398484+00:00",
+      "historical_games_available": 1493,
       "lineup_status": "projected",
       "matchup": "DET @ ORL",
       "model": "opening-possession-v2-espn",
@@ -109,8 +109,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909315",
-      "generated_at_utc": "2026-11-24T04:57:01.583335+00:00",
-      "historical_games_available": 1491,
+      "generated_at_utc": "2026-11-24T15:44:32.398484+00:00",
+      "historical_games_available": 1493,
       "lineup_status": "projected",
       "matchup": "BOS @ WSH",
       "model": "opening-possession-v2-espn",
@@ -214,8 +214,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909316",
-      "generated_at_utc": "2026-11-24T04:57:01.583335+00:00",
-      "historical_games_available": 1491,
+      "generated_at_utc": "2026-11-24T15:44:32.398484+00:00",
+      "historical_games_available": 1493,
       "lineup_status": "projected",
       "matchup": "DAL @ DEN",
       "model": "opening-possession-v2-espn",
@@ -317,7 +317,7 @@
       "tipoff_utc": "2026-11-25T03:00:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-11-24T04:57:01.583335+00:00",
+  "generated_at_utc": "2026-11-24T15:44:32.398484+00:00",
   "model": "opening-possession-v2-espn",
   "skipped": [],
   "version": "0.1.0"
