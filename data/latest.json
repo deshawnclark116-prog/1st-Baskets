@@ -4,7 +4,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909326",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "MIA @ NY",
@@ -109,7 +109,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909327",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "MIL @ DET",
@@ -214,7 +214,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909328",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "PHI @ IND",
@@ -319,7 +319,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909329",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "BKN @ TOR",
@@ -424,7 +424,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909330",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "ATL @ BOS",
@@ -529,7 +529,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909331",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "MEM @ MIN",
@@ -634,7 +634,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909332",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "DAL @ PHX",
@@ -739,7 +739,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909333",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "LAL @ SA",
@@ -844,7 +844,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909334",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "DEN @ UTAH",
@@ -949,7 +949,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909335",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "NO @ LAC",
@@ -1054,7 +1054,7 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401909336",
-      "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+      "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
       "historical_games_available": 1505,
       "lineup_status": "projected",
       "matchup": "GS @ POR",
@@ -1157,7 +1157,7 @@
       "tipoff_utc": "2026-11-28T02:30:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-11-26T20:30:12.345022+00:00",
+  "generated_at_utc": "2026-11-27T03:13:55.370608+00:00",
   "model": "opening-possession-v2-espn",
   "skipped": [],
   "version": "0.1.0"
