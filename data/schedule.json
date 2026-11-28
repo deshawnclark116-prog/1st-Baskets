@@ -21136,7 +21136,7 @@
       "code": "NY",
       "id": "18"
     },
-    "status": 1,
+    "status": 3,
     "tipoff_utc": "2026-11-28T00:00:00+00:00"
   },
   {
@@ -21150,7 +21150,7 @@
       "code": "DET",
       "id": "8"
     },
-    "status": 1,
+    "status": 3,
     "tipoff_utc": "2026-11-28T00:30:00+00:00"
   },
   {
@@ -21164,7 +21164,7 @@
       "code": "IND",
       "id": "11"
     },
-    "status": 1,
+    "status": 3,
     "tipoff_utc": "2026-11-28T00:30:00+00:00"
   },
   {
@@ -21178,7 +21178,7 @@
       "code": "TOR",
       "id": "28"
     },
-    "status": 1,
+    "status": 3,
     "tipoff_utc": "2026-11-28T00:30:00+00:00"
   },
   {
@@ -21192,7 +21192,7 @@
       "code": "BOS",
       "id": "2"
     },
-    "status": 1,
+    "status": 3,
     "tipoff_utc": "2026-11-28T01:00:00+00:00"
   },
   {
@@ -21206,7 +21206,7 @@
       "code": "MIN",
       "id": "16"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T01:30:00+00:00"
   },
   {
@@ -21220,7 +21220,7 @@
       "code": "PHX",
       "id": "21"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T02:00:00+00:00"
   },
   {
@@ -21234,7 +21234,7 @@
       "code": "SA",
       "id": "24"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T02:30:00+00:00"
   },
   {
@@ -21248,7 +21248,7 @@
       "code": "UTAH",
       "id": "26"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T02:30:00+00:00"
   },
   {
@@ -21262,7 +21262,7 @@
       "code": "LAC",
       "id": "12"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T02:30:00+00:00"
   },
   {
@@ -21276,7 +21276,7 @@
       "code": "POR",
       "id": "22"
     },
-    "status": 1,
+    "status": 2,
     "tipoff_utc": "2026-11-28T02:30:00+00:00"
   },
   {
@@ -21897,14 +21897,14 @@
   },
   {
     "away": {
-      "code": "TBD",
-      "id": "-2"
+      "code": "PHI",
+      "id": "20"
     },
     "data_source": "espn_site_v2",
     "game_id": "401909450",
     "home": {
-      "code": "TBD",
-      "id": "-1"
+      "code": "ATL",
+      "id": "1"
     },
     "status": 1,
     "tipoff_utc": "2026-12-04T05:00:00+00:00"
@@ -21925,14 +21925,14 @@
   },
   {
     "away": {
-      "code": "TBD",
-      "id": "-2"
+      "code": "BOS",
+      "id": "2"
     },
     "data_source": "espn_site_v2",
     "game_id": "401909452",
     "home": {
-      "code": "TBD",
-      "id": "-1"
+      "code": "DET",
+      "id": "8"
     },
     "status": 1,
     "tipoff_utc": "2026-12-05T05:00:00+00:00"
@@ -21958,6 +21958,34 @@
     },
     "data_source": "espn_site_v2",
     "game_id": "401909454",
+    "home": {
+      "code": "TBD",
+      "id": "-1"
+    },
+    "status": 1,
+    "tipoff_utc": "2026-12-08T05:00:00+00:00"
+  },
+  {
+    "away": {
+      "code": "TBD",
+      "id": "-2"
+    },
+    "data_source": "espn_site_v2",
+    "game_id": "401937079",
+    "home": {
+      "code": "TBD",
+      "id": "-1"
+    },
+    "status": 1,
+    "tipoff_utc": "2026-12-08T05:00:00+00:00"
+  },
+  {
+    "away": {
+      "code": "TBD",
+      "id": "-2"
+    },
+    "data_source": "espn_site_v2",
+    "game_id": "401937080",
     "home": {
       "code": "TBD",
       "id": "-1"
