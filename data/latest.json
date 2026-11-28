@@ -4,8 +4,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910046",
-      "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
-      "historical_games_available": 1510,
+      "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
+      "historical_games_available": 1516,
       "lineup_status": "projected",
       "matchup": "ORL @ WSH",
       "model": "opening-possession-v2-espn",
@@ -109,8 +109,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910047",
-      "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
-      "historical_games_available": 1510,
+      "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
+      "historical_games_available": 1516,
       "lineup_status": "projected",
       "matchup": "BKN @ CHA",
       "model": "opening-possession-v2-espn",
@@ -214,8 +214,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910048",
-      "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
-      "historical_games_available": 1510,
+      "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
+      "historical_games_available": 1516,
       "lineup_status": "projected",
       "matchup": "IND @ CHI",
       "model": "opening-possession-v2-espn",
@@ -319,8 +319,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910049",
-      "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
-      "historical_games_available": 1510,
+      "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
+      "historical_games_available": 1516,
       "lineup_status": "projected",
       "matchup": "OKC @ MIL",
       "model": "opening-possession-v2-espn",
@@ -424,8 +424,8 @@
     {
       "data_source": "espn_site_v2",
       "game_id": "401910050",
-      "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
-      "historical_games_available": 1510,
+      "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
+      "historical_games_available": 1516,
       "lineup_status": "projected",
       "matchup": "PHI @ HOU",
       "model": "opening-possession-v2-espn",
@@ -527,7 +527,7 @@
       "tipoff_utc": "2026-11-29T01:30:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-11-28T03:50:36.244029+00:00",
+  "generated_at_utc": "2026-11-28T12:53:13.127127+00:00",
   "model": "opening-possession-v2-espn",
   "skipped": [],
   "version": "0.1.0"
